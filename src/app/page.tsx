@@ -1,19 +1,33 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowDown, ArrowRight, Leaf, Mountain, PackageCheck, HeartHandshake, Sprout, Quote } from "lucide-react";
 import ProductCard from "@/components/ProductCard";
 import { products } from "@/data/products";
 
+export const metadata: Metadata = {
+  title: "Buy Pure Shilajit & Lab-Certified Zaitoon Oil | Rs.1,700-2,000 | Free Delivery 🇵🇰",
+  description: "⭐ Lab-Certified Pure Zaitoon Oil Rs.1,700-6,200 ⭐ Pure Shilajit 10g Rs.2,000 ⭐ FREE Delivery All Pakistan ⭐ Cash on Delivery (COD) ⭐ 100% Quality Guaranteed ⭐ Order on WhatsApp +92-336-8885780",
+  alternates: {
+    canonical: "https://waziristaninaturals.com",
+  },
+  openGraph: {
+    title: "Buy Pure Shilajit Rs.2,000 & Lab-Certified Zaitoon Oil | Free Delivery Pakistan 🇵🇰",
+    description: "✓ Lab-Certified Zaitoon Oil ✓ Pure Mountain Shilajit ✓ Free Delivery ✓ COD Available ✓ 100% Quality Guaranteed",
+    url: "https://waziristaninaturals.com",
+  },
+};
+
 export default function HomePage() {
   return <>
     <section className="hero">
-      <Image src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=2200&q=90" alt="Waziristan mountain landscape" fill priority sizes="100vw" className="hero-bg"/>
+      <Image src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=2200&q=90" alt="Natural mountain landscape inspired by Waziristan Pakistan" fill priority sizes="100vw" className="hero-bg"/>
       <div className="hero-shade"/>
       <div className="container hero-content">
         <div className="hero-copy">
           <span className="eyebrow eyebrow-light"><span/> ROOTED IN NATURE, INSPIRED BY WAZIRISTAN</span>
-          <h1>Nature&apos;s heritage.<br/><em>Thoughtfully</em> brought to you.</h1>
-          <p>Discover a considered selection of Shilajit and Zaitoon Oil, inspired by the landscapes and traditions of Waziristan. Free delivery nationwide!</p>
+          <h1>Buy Premium Shilajit & Zaitoon Oil in Pakistan<br/><em>Natural Products</em> from Waziristan</h1>
+          <p>Discover authentic Shilajit 10g and premium Zaitoon Olive Oil in multiple sizes. Inspired by the natural heritage of Waziristan. Free delivery nationwide with Cash on Delivery!</p>
           <div className="hero-buttons"><Link href="/shop" className="button button-gold">Explore the collection <ArrowRight size={17}/></Link><Link href="/about" className="button button-outline-light">Our story</Link></div>
           <div className="hero-footnote"><Mountain size={17}/> Inspired by the natural beauty of Waziristan · Free Delivery · COD Available</div>
         </div>
@@ -22,7 +36,7 @@ export default function HomePage() {
       <a className="scroll-cue" href="#collection"><ArrowDown size={16}/> DISCOVER</a>
     </section>
 
-    <section className="trust-strip"><div className="container trust-items"><span><Leaf/> Nature-inspired selection</span><span><PackageCheck/> Cash on Delivery (COD)</span><span><HeartHandshake/> Quality Guaranteed</span></div></section>
+    <section className="trust-strip"><div className="container trust-items"><span><Leaf/> Lab-Certified Quality</span><span><PackageCheck/> Cash on Delivery (COD)</span><span><HeartHandshake/> 100% Authentic Products</span></div></section>
 
     <section className="section collection-section" id="collection">
       <div className="container">
@@ -33,7 +47,7 @@ export default function HomePage() {
     </section>
 
     <section className="story-band">
-      <div className="story-image"><Image src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=1200&q=85" alt="Sunlight across a green mountain valley" fill sizes="50vw"/></div>
+      <div className="story-image"><Image src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=1200&q=85" alt="Green mountain valley representing natural heritage of Waziristan" fill sizes="50vw"/></div>
       <div className="story-content"><div className="section-kicker section-kicker-gold">A PLACE, A STORY, A PROMISE</div><h2>Inspired by the land.<br/><em>Made for everyday.</em></h2><p>Waziristani Naturals is built around a simple idea: bring products inspired by the region&apos;s natural heritage to people who value thoughtful choices. We are starting with Shilajit and Zaitoon Oil, and growing with our customers.</p><Link href="/about" className="button button-gold">Discover our story <ArrowRight size={16}/></Link></div>
     </section>
 

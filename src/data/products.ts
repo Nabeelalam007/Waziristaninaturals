@@ -17,15 +17,15 @@ export const products: Product[] = [
     slug: "zaitoon-oil",
     name: "Zaitoon Oil",
     category: "Oil",
-    description: "A carefully presented olive oil range for everyday kitchens and thoughtful gifting. Use in cooking, salads, yogurt, or for hair and skin care.",
+    description: "Premium cold-pressed olive oil for cooking, hair care, and skin wellness. Sourced with care and quality-tested. Lab-tested and certified for purity.",
     image: "/oil.jpg",
     options: [
-      { label: "250 ml", price: 1699, originalPrice: 1849 },
-      { label: "500 ml", price: 3299, originalPrice: 3499 },
-      { label: "750 ml", price: 5099, originalPrice: 5399 },
-      { label: "1000 ml", price: 6199, originalPrice: 6499 }
+      { label: "250 ml", price: 1699, originalPrice: 1699 },
+      { label: "500 ml", price: 3299, originalPrice: 3299 },
+      { label: "750 ml", price: 5099, originalPrice: 5099 },
+      { label: "1000 ml", price: 6199, originalPrice: 6199 }
     ],
-    badge: "Launch Offer",
+    badge: "Lab Certified",
     guaranteed: true
   },
   {
@@ -33,9 +33,9 @@ export const products: Product[] = [
     slug: "shilajit",
     name: "Shilajit",
     category: "Resin",
-    description: "A traditional mountain-origin resin product, presented in a compact 10 g jar. Sourced from pristine mountains with quality assurance.",
+    description: "Pure mountain-origin Shilajit resin in a compact 10g jar. Sourced from pristine mountains with quality assurance and authenticity guarantee.",
     image: "/sil.jpg",
-    options: [{ label: "10 g", price: 1999, originalPrice: 2199 }],
+    options: [{ label: "10 g", price: 1999, originalPrice: 1999 }],
     badge: "Premium Quality",
     guaranteed: true
   },
@@ -46,7 +46,7 @@ export const products: Product[] = [
     category: "Combo",
     description: "Perfect introduction to natural wellness - 10g Shilajit jar + 250ml Zaitoon Oil at special combo price. Both products guaranteed.",
     image: "/oil.jpg",
-    options: [{ label: "Combo Pack", price: 3499, originalPrice: 3699 }],
+    options: [{ label: "Combo Pack", price: 3500, originalPrice: 3698 }],
     badge: "Best Value",
     isCombo: true,
     guaranteed: true
@@ -58,7 +58,7 @@ export const products: Product[] = [
     category: "Combo",
     description: "Stock up and save - Two 1 liter bottles of premium Zaitoon Oil at an exclusive bundle price. Quality guaranteed.",
     image: "/oil.jpg",
-    options: [{ label: "2 × 1000 ml", price: 11999, originalPrice: 12399 }],
+    options: [{ label: "2 × 1000 ml", price: 12000, originalPrice: 12398 }],
     badge: "Family Size",
     isCombo: true,
     guaranteed: true
