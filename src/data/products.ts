@@ -46,7 +46,7 @@ export const products: Product[] = [
     category: "Combo",
     description: "Perfect introduction to natural wellness - 10g Shilajit jar + 250ml Zaitoon Oil at special combo price. Both products guaranteed.",
     image: "/oil.jpg",
-    options: [{ label: "Combo Pack", price: 3500, originalPrice: 3698 }],
+    options: [{ label: "Combo Pack", price: 3499, originalPrice: 3698 }],
     badge: "Best Value",
     isCombo: true,
     guaranteed: true
@@ -58,7 +58,7 @@ export const products: Product[] = [
     category: "Combo",
     description: "Stock up and save - Two 1 liter bottles of premium Zaitoon Oil at an exclusive bundle price. Quality guaranteed.",
     image: "/oil.jpg",
-    options: [{ label: "2 × 1000 ml", price: 12000, originalPrice: 12398 }],
+    options: [{ label: "2 × 1000 ml", price: 11999, originalPrice: 12398 }],
     badge: "Family Size",
     isCombo: true,
     guaranteed: true
