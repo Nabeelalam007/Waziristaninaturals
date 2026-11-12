@@ -5,6 +5,10 @@ import { ArrowDown, ArrowRight, Leaf, Mountain, PackageCheck, HeartHandshake, Sp
 import ProductCard from "@/components/ProductCard";
 import { products } from "@/data/products";
 
+// Local optimized images instead of Unsplash
+const HERO_IMAGE = "/hero-mountains.jpg"; // We'll create optimized local versions
+const STORY_IMAGE = "/story-valley.jpg";
+
 export const metadata: Metadata = {
   title: "Buy Pure Shilajit & Lab-Certified Zaitoon Oil | Rs.1,700-2,000 | Free Delivery 🇵🇰",
   description: "⭐ Lab-Certified Pure Zaitoon Oil Rs.1,700-6,200 ⭐ Pure Shilajit 10g Rs.2,000 ⭐ FREE Delivery All Pakistan ⭐ Cash on Delivery (COD) ⭐ 100% Quality Guaranteed ⭐ Order on WhatsApp +92-336-8885780",
@@ -21,7 +25,12 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return <>
     <section className="hero">
-      <Image src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=2200&q=90" alt="Natural mountain landscape inspired by Waziristan Pakistan" fill priority sizes="100vw" className="hero-bg"/>
+      {/* Placeholder gradient background for initial load */}
+      <div className="hero-bg" style={{
+        background: 'linear-gradient(135deg, #0a2e1c 0%, #1a4d2e 50%, #2d5a3d 100%)',
+        position: 'absolute',
+        inset: 0
+      }} />
       <div className="hero-shade"/>
       <div className="container hero-content">
         <div className="hero-copy">
@@ -47,7 +56,10 @@ export default function HomePage() {
     </section>
 
     <section className="story-band">
-      <div className="story-image"><Image src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=1200&q=85" alt="Green mountain valley representing natural heritage of Waziristan" fill sizes="50vw"/></div>
+      <div className="story-image" style={{
+        background: 'linear-gradient(135deg, #2d5a3d 0%, #1a4d2e 50%, #0a2e1c 100%)',
+        position: 'relative'
+      }} />
       <div className="story-content"><div className="section-kicker section-kicker-gold">A PLACE, A STORY, A PROMISE</div><h2>Inspired by the land.<br/><em>Made for everyday.</em></h2><p>Waziristani Naturals is built around a simple idea: bring products inspired by the region&apos;s natural heritage to people who value thoughtful choices. We are starting with Shilajit and Zaitoon Oil, and growing with our customers.</p><Link href="/about" className="button button-gold">Discover our story <ArrowRight size={16}/></Link></div>
     </section>
 
