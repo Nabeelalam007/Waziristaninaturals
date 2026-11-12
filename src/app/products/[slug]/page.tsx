@@ -3,13 +3,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound, useParams } from "next/navigation";
-import { useState } from "react";
+import { useState, lazy, Suspense } from "react";
 import { ArrowLeft, ShoppingBag, Check, TrendingDown, Shield, Truck } from "lucide-react";
 import { products, formatPKR } from "@/data/products";
 import { useCart } from "@/context/CartContext";
 import { ProductSchema, BreadcrumbSchema, FAQPageSchema } from "@/components/StructuredData";
-import FAQ from "@/components/FAQ";
-import LabCertification from "@/components/LabCertification";
+
+// Dynamic imports for below-the-fold components
+const FAQ = lazy(() => import("@/components/FAQ"));
+const LabCertification = lazy(() => import("@/components/LabCertification"));
 
 // FAQ data for each product
 const zaitoonFAQs = [
@@ -122,7 +124,8 @@ export default function ProductPage() {
                 alt={isZaitoonOil ? `Waziristani Naturals Zaitoon Olive Oil bottle - Premium quality` : `Waziristani Naturals Shilajit 10g jar - Pure mountain resin`}
                 fill 
                 priority 
-                sizes="(max-width: 800px) 100vw, 55vw"
+                sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 560px"
+                quality={85}
               />
             </div>
             <div className="detail-copy">
@@ -276,7 +279,11 @@ export default function ProductPage() {
               )}
               
               {/* Lab Certification Section for Zaitoon Oil */}
-              {isZaitoonOil && <LabCertification productName="Zaitoon Oil" />}
+              {isZaitoonOil && (
+                <Suspense fallback={<div style={{ padding: '20px', textAlign: 'center', color: '#667C38' }}>Loading certification...</div>}>
+                  <LabCertification productName="Zaitoon Oil" />
+                </Suspense>
+              )}
               
               {/* Pricing Comparison Table for Zaitoon Oil */}
               {isZaitoonOil && (
@@ -329,7 +336,11 @@ export default function ProductPage() {
               )}
               
               {/* FAQ Section */}
-              {currentFAQs.length > 0 && <FAQ items={currentFAQs} />}
+              {currentFAQs.length > 0 && (
+                <Suspense fallback={<div style={{ padding: '20px', textAlign: 'center', color: '#667C38' }}>Loading FAQs...</div>}>
+                  <FAQ items={currentFAQs} />
+                </Suspense>
+              )}
               
               {/* Why Choose Section */}
               <div style={{ marginTop: '32px', padding: '24px', background: 'linear-gradient(135deg, #123524 0%, #0B2418 100%)', borderRadius: '12px', color: '#ffffff' }}>

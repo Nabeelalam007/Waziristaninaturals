@@ -36,9 +36,10 @@ function ProductCard({ product }: { product: Product }) {
           src={product.image} 
           alt={getAltText(product.id)} 
           fill 
-          sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" 
+          sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px" 
           className="product-image"
           loading="lazy"
+          quality={85}
         />
         {product.badge && <span className="product-badge">{product.badge}</span>}
         {product.guaranteed && <span className="guarantee-badge">✓ GUARANTEED</span>}
