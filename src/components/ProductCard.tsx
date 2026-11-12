@@ -36,13 +36,13 @@ function ProductCard({ product }: { product: Product }) {
           src={product.image} 
           alt={getAltText(product.id)} 
           fill 
-          sizes="(max-width: 700px) 100vw, 50vw" 
+          sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" 
           className="product-image"
           loading="lazy"
         />
         {product.badge && <span className="product-badge">{product.badge}</span>}
         {product.guaranteed && <span className="guarantee-badge">✓ GUARANTEED</span>}
-        <span className="image-arrow"><ArrowUpRight size={18}/></span>
+        <span className="image-arrow" aria-hidden="true"><ArrowUpRight size={16}/></span>
       </Link>
       <div className="product-card-content">
         <div className="product-meta">
@@ -52,13 +52,15 @@ function ProductCard({ product }: { product: Product }) {
         <h3>{product.name}</h3>
         <p>{product.description}</p>
         {product.options.length > 1 && (
-          <div className="size-options" aria-label="Choose bottle size">
+          <div className="size-options" role="group" aria-label="Choose bottle size">
             {product.options.map((item, index) => (
               <button 
                 key={item.label} 
                 onClick={() => setSelected(index)} 
                 className={selected === index ? "size-option selected" : "size-option"}
                 type="button"
+                aria-pressed={selected === index}
+                aria-label={`Select ${item.label} size for ${formatPKR(item.price)}`}
               >
                 {item.label}
               </button>
@@ -71,7 +73,7 @@ function ProductCard({ product }: { product: Product }) {
             {option.originalPrice && savingsPercent > 0 ? (
               <div className="price-wrapper">
                 <strong>{formatPKR(option.price)}</strong>
-                <span style={{ fontSize: '13px', color: '#929486', textDecoration: 'line-through' }}>
+                <span style={{ fontSize: '12px', color: '#929486', textDecoration: 'line-through' }}>
                   {formatPKR(option.originalPrice)}
                 </span>
                 <span className="savings-badge">SAVE {savingsPercent}%</span>
@@ -84,8 +86,11 @@ function ProductCard({ product }: { product: Product }) {
             className="button button-green add-button" 
             onClick={handleAddToCart}
             type="button"
+            aria-label={`Add ${product.name} ${option.label} to cart for ${formatPKR(option.price)}`}
           >
-            <ShoppingBag size={16}/> Add to cart
+            <ShoppingBag size={18}/> 
+            <span className="add-text">Add to cart</span>
+            <span className="add-text-short" aria-hidden="true">Add</span>
           </button>
         </div>
       </div>
