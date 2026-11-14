@@ -25,10 +25,9 @@ export default function Footer() {
                 width: '56px',
                 height: '56px',
                 flexShrink: 0,
-                background: 'linear-gradient(135deg, #e8f0dc 0%, #d9e6c8 100%)',
+                background: 'transparent',
                 borderRadius: '10px',
-                padding: '6px',
-                boxShadow: '0 3px 12px rgba(122, 155, 71, 0.25)',
+                padding: '2px',
                 display: 'block'
               }}
             >
