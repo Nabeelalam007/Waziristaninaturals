@@ -17,12 +17,12 @@ export const metadata: Metadata = {
     "Waziristani Naturals customer service",
   ],
   alternates: {
-    canonical: "https://waziristaninaturals.com/contact",
+    canonical: "https://waziristaninaturals.store/contact",
   },
   openGraph: {
     title: "Contact Waziristani Naturals | Order on WhatsApp 📱",
     description: "Get in touch for orders & product information. WhatsApp: +92-336-8885780. FREE delivery & COD available.",
-    url: "https://waziristaninaturals.com/contact",
+    url: "https://waziristaninaturals.store/contact",
   },
 };
 

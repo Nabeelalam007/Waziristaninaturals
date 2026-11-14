@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = 'https://waziristaninaturals.com'
+  const baseUrl = 'https://waziristaninaturals.store'
   
   return {
     rules: {

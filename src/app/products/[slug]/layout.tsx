@@ -36,14 +36,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'Quality tested olive oil Pakistan',
       ],
       alternates: {
-        canonical: `https://waziristaninaturals.com/products/${product.slug}`,
+        canonical: `https://waziristaninaturals.store/products/${product.slug}`,
       },
       openGraph: {
         title: 'Lab-Certified Zaitoon Oil Rs.1,700-6,200 | Buy Online Pakistan 🫒',
         description: `✓ Quality Tested Pure Olive Oil ✓ All Sizes ✓ FREE Delivery ✓ COD Available`,
-        url: `https://waziristaninaturals.com/products/${product.slug}`,
+        url: `https://waziristaninaturals.store/products/${product.slug}`,
         images: [{
-          url: `https://waziristaninaturals.com${product.image}`,
+          url: `https://waziristaninaturals.store${product.image}`,
           width: 800,
           height: 800,
           alt: 'Lab-Certified Premium Zaitoon Olive Oil Pakistan - Multiple Sizes Available'
@@ -70,14 +70,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'Mountain Shilajit Pakistan',
       ],
       alternates: {
-        canonical: `https://waziristaninaturals.com/products/${product.slug}`,
+        canonical: `https://waziristaninaturals.store/products/${product.slug}`,
       },
       openGraph: {
         title: 'Pure Shilajit 10g Rs.2,000 | Buy in Pakistan 🏔️',
         description: `✓ 100% Pure & Authentic ✓ FREE Delivery ✓ COD Available ✓ Energy & Vitality`,
-        url: `https://waziristaninaturals.com/products/${product.slug}`,
+        url: `https://waziristaninaturals.store/products/${product.slug}`,
         images: [{
-          url: `https://waziristaninaturals.com${product.image}`,
+          url: `https://waziristaninaturals.store${product.image}`,
           width: 800,
           height: 800,
           alt: 'Pure Himalayan Shilajit 10g Pakistan - Authentic Quality'
@@ -91,7 +91,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${product.name} | Waziristani Naturals`,
     description: product.description,
     alternates: {
-      canonical: `https://waziristaninaturals.com/products/${product.slug}`,
+      canonical: `https://waziristaninaturals.store/products/${product.slug}`,
     },
     robots: {
       index: false, // Don't index combo products in search

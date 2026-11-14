@@ -32,15 +32,48 @@ function ProductCard({ product }: { product: Product }) {
   return (
     <article className={`product-card ${product.isCombo ? 'combo-special' : ''}`}>
       <Link href={`/products/${product.slug}`} className="product-image-wrap">
-        <Image 
-          src={product.image} 
-          alt={getAltText(product.id)} 
-          fill 
-          sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px" 
-          className="product-image"
-          loading="lazy"
-          quality={85}
-        />
+        {product.isCombo && product.secondaryImage ? (
+          // Show both images side by side for combo products
+          <div style={{ display: 'flex', width: '100%', height: '100%', gap: '10px', padding: '20px' }}>
+            <div style={{ flex: 1, position: 'relative' }}>
+              <Image 
+                src={product.image} 
+                alt={`${product.name} - Zaitoon Oil`}
+                fill
+                sizes="(max-width: 700px) 50vw, (max-width: 1024px) 25vw, 200px" 
+                style={{ objectFit: 'contain' }}
+                loading="lazy"
+                quality={90}
+              />
+            </div>
+            <div style={{ flex: 1, position: 'relative' }}>
+              <Image 
+                src={product.secondaryImage} 
+                alt={`${product.name} - Shilajit`}
+                fill
+                sizes="(max-width: 700px) 50vw, (max-width: 1024px) 25vw, 200px" 
+                style={{ objectFit: 'contain' }}
+                loading="lazy"
+                quality={90}
+              />
+            </div>
+          </div>
+        ) : (
+          // Single image for regular products
+          <Image 
+            src={product.image} 
+            alt={getAltText(product.id)} 
+            fill 
+            sizes="(max-width: 700px) 100vw, (max-width: 1024px) 50vw, 400px" 
+            className="product-image"
+            loading="lazy"
+            quality={90}
+            style={{
+              objectFit: 'contain',
+              padding: '20px'
+            }}
+          />
+        )}
         {product.badge && <span className="product-badge">{product.badge}</span>}
         {product.guaranteed && <span className="guarantee-badge">✓ GUARANTEED</span>}
         <span className="image-arrow" aria-hidden="true"><ArrowUpRight size={16}/></span>
@@ -88,10 +121,31 @@ function ProductCard({ product }: { product: Product }) {
             onClick={handleAddToCart}
             type="button"
             aria-label={`Add ${product.name} ${option.label} to cart for ${formatPKR(option.price)}`}
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '8px',
+              padding: '11px 18px',
+              background: 'linear-gradient(135deg, #5a8f45 0%, #4a7a38 100%)',
+              border: 'none',
+              borderRadius: '6px',
+              color: '#ffffff',
+              fontSize: '14px',
+              fontWeight: '600',
+              cursor: 'pointer',
+              transition: 'all 0.2s ease',
+              boxShadow: 'none'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.background = 'linear-gradient(135deg, #4a7a38 0%, #3a5f2a 100%)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.background = 'linear-gradient(135deg, #5a8f45 0%, #4a7a38 100%)';
+            }}
           >
-            <ShoppingBag size={18}/> 
-            <span className="add-text">Add to cart</span>
-            <span className="add-text-short" aria-hidden="true">Add</span>
+            <ShoppingBag size={18} strokeWidth={2}/> 
+            <span>Add to cart</span>
           </button>
         </div>
       </div>

@@ -7,7 +7,7 @@ import { CartProvider } from "@/context/CartContext";
 import { OrganizationSchema, WebsiteSchema, LocalBusinessSchema } from "@/components/StructuredData";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://waziristaninaturals.com"),
+  metadataBase: new URL("https://waziristaninaturals.store"),
   title: {
     default: "Buy Shilajit Rs.2,000 & Lab-Certified Zaitoon Oil | Free Delivery 🇵🇰",
     template: "%s | Waziristani Naturals"
@@ -39,17 +39,17 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_PK",
-    url: "https://waziristaninaturals.com",
+    url: "https://waziristaninaturals.store",
     siteName: "Waziristani Naturals",
     title: "Buy Shilajit & Lab-Certified Zaitoon Oil | Free Delivery Pakistan 🇵🇰",
     description: "✓ Lab-Certified Zaitoon Oil Rs.1,700 ✓ Pure Shilajit Rs.2,000 ✓ FREE Delivery ✓ COD Available",
     images: [
       {
-        url: "/og-image.png",
+        url: "/logo.jpg",
         width: 1200,
         height: 630,
         alt: "Waziristani Naturals - Lab-Certified Zaitoon Oil & Pure Shilajit Pakistan",
-        type: "image/png"
+        type: "image/jpeg"
       },
     ],
   },
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Buy Shilajit & Lab-Certified Zaitoon Oil | Free Delivery Pakistan 🇵🇰",
     description: "✓ Lab-Certified Zaitoon Oil Rs.1,700 ✓ Pure Shilajit Rs.2,000 ✓ COD Available",
-    images: ["/og-image.png"],
+    images: ["/logo.jpg"],
   },
   robots: {
     index: true,
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://waziristaninaturals.com",
+    canonical: "https://waziristaninaturals.store",
   },
 };
 
@@ -79,6 +79,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en-PK">
       <head>
+        <link rel="icon" href="/logo.jpg" type="image/jpeg" />
+        <link rel="apple-touch-icon" href="/logo.jpg" />
         <meta name="theme-color" content="#123524" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />

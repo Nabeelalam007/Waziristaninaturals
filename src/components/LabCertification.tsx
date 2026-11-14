@@ -81,9 +81,7 @@ export default function LabCertification({ productName }: CertificationProps) {
                 color: '#4a5542',
                 marginBottom: '16px'
               }}>
-                Our {productName} has been independently tested and certified for purity and quality 
-                by accredited laboratory facilities. We are committed to transparency and 
-                providing you with genuine, authentic products.
+                Our {productName} has been independently laboratory-tested. Documentation available upon request for verification of authenticity and quality standards.
               </p>
             </div>
           </div>
@@ -101,10 +99,10 @@ export default function LabCertification({ productName }: CertificationProps) {
               border: '2px solid #d9e6c8'
             }}>
               <div style={{ fontSize: 'clamp(10px, 2.5vw, 11px)', color: '#667C38', marginBottom: '4px', fontWeight: '600' }}>
-                ✓ Purity Testing
+                ✓ Laboratory Testing
               </div>
               <div style={{ fontSize: 'clamp(9px, 2vw, 10px)', color: '#5a6352' }}>
-                Lab-verified quality standards
+                Independent quality verification
               </div>
             </div>
 
@@ -115,10 +113,10 @@ export default function LabCertification({ productName }: CertificationProps) {
               border: '2px solid #d9e6c8'
             }}>
               <div style={{ fontSize: 'clamp(10px, 2.5vw, 11px)', color: '#667C38', marginBottom: '4px', fontWeight: '600' }}>
-                ✓ Authenticity Verified
+                ✓ Quality Standards
               </div>
               <div style={{ fontSize: 'clamp(9px, 2vw, 10px)', color: '#5a6352' }}>
-                100% pure olive oil confirmed
+                Meets food safety requirements
               </div>
             </div>
 
@@ -129,10 +127,10 @@ export default function LabCertification({ productName }: CertificationProps) {
               border: '2px solid #d9e6c8'
             }}>
               <div style={{ fontSize: 'clamp(10px, 2.5vw, 11px)', color: '#667C38', marginBottom: '4px', fontWeight: '600' }}>
-                ✓ Quality Assured
+                ✓ Documentation Available
               </div>
               <div style={{ fontSize: 'clamp(9px, 2vw, 10px)', color: '#5a6352' }}>
-                Meets international standards
+                Test reports upon request
               </div>
             </div>
           </div>
@@ -286,10 +284,10 @@ export default function LabCertification({ productName }: CertificationProps) {
                     <strong>Brand:</strong> Waziristani Naturals
                   </p>
                   <p style={{ margin: '8px 0' }}>
-                    <strong>Certification:</strong> Laboratory-tested for purity and quality
+                    <strong>Certification:</strong> Laboratory testing documentation available
                   </p>
                   <p style={{ margin: '8px 0' }}>
-                    <strong>Status:</strong> <span style={{ color: '#5a8f45', fontWeight: '600' }}>✓ Certified Genuine</span>
+                    <strong>Status:</strong> <span style={{ color: '#5a8f45', fontWeight: '600' }}>✓ Quality Verified</span>
                   </p>
                 </div>
               </div>
@@ -310,10 +308,10 @@ export default function LabCertification({ productName }: CertificationProps) {
                   paddingLeft: '20px',
                   margin: 0
                 }}>
-                  <li>Purity and authenticity of olive oil content</li>
-                  <li>Absence of adulterants and synthetic additives</li>
-                  <li>Quality parameters meeting food safety standards</li>
-                  <li>Proper storage and handling verification</li>
+                  <li>Quality and authenticity verification testing</li>
+                  <li>Safety and purity assessment</li>
+                  <li>Standard food safety parameters</li>
+                  <li>Documentation available for customer review</li>
                 </ul>
               </div>
 
@@ -330,8 +328,9 @@ export default function LabCertification({ productName }: CertificationProps) {
                   margin: 0
                 }}>
                   <strong>🔬 Quality Commitment:</strong> Waziristani Naturals is committed to 
-                  providing authentic, high-quality natural products. All our Zaitoon Oil bottles 
-                  undergo rigorous quality testing to ensure you receive genuine, pure olive oil.
+                  providing authentic, high-quality natural products. Our Zaitoon Oil undergoes 
+                  laboratory testing to ensure quality standards. Test documentation is available 
+                  to customers upon request.
                 </p>
               </div>
 

@@ -7,8 +7,8 @@ export function OrganizationSchema() {
     '@type': 'Organization',
     name: 'Waziristani Naturals',
     alternateName: 'Waziristan Naturals',
-    url: 'https://waziristaninaturals.com',
-    logo: 'https://waziristaninaturals.com/logo.png',
+    url: 'https://waziristaninaturals.store',
+    logo: 'https://waziristaninaturals.store/logo.jpg',
     description: 'Premium natural products including Shilajit and Zaitoon Olive Oil from Pakistan with free delivery nationwide',
     address: {
       '@type': 'PostalAddress',
@@ -49,13 +49,13 @@ export function WebsiteSchema() {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: 'Waziristani Naturals',
-    url: 'https://waziristaninaturals.com',
+    url: 'https://waziristaninaturals.store',
     description: 'Shop premium Shilajit and Zaitoon Oil online in Pakistan',
     potentialAction: {
       '@type': 'SearchAction',
       target: {
         '@type': 'EntryPoint',
-        urlTemplate: 'https://waziristaninaturals.com/shop?q={search_term_string}',
+        urlTemplate: 'https://waziristaninaturals.store/shop?q={search_term_string}',
       },
       'query-input': 'required name=search_term_string',
     },
@@ -78,7 +78,7 @@ export function BreadcrumbSchema({ items }: { items: { name: string; url: string
       '@type': 'ListItem',
       position: index + 1,
       name: item.name,
-      item: `https://waziristaninaturals.com${item.url}`,
+      item: `https://waziristaninaturals.store${item.url}`,
     })),
   }
 
@@ -99,7 +99,7 @@ export function ProductSchema({ product }: { product: Product }) {
     priceCurrency: 'PKR',
     availability: 'https://schema.org/InStock',
     priceValidUntil: new Date(Date.now() + 90 * 24 * 60 * 60 * 1000).toISOString().split('T')[0], // 90 days
-    url: `https://waziristaninaturals.com/products/${product.slug}`,
+    url: `https://waziristaninaturals.store/products/${product.slug}`,
     seller: {
       '@type': 'Organization',
       name: 'Waziristani Naturals',
@@ -155,7 +155,7 @@ export function ProductSchema({ product }: { product: Product }) {
       '@type': 'Brand',
       name: 'Waziristani Naturals',
     },
-    image: `https://waziristaninaturals.com${product.image}`,
+    image: `https://waziristaninaturals.store${product.image}`,
     sku: product.id,
     offers: offers.length === 1 ? offers[0] : {
       '@type': 'AggregateOffer',
@@ -164,13 +164,6 @@ export function ProductSchema({ product }: { product: Product }) {
       highPrice: Math.max(...product.options.map(o => o.price)).toFixed(2),
       offerCount: offers.length,
       offers: offers
-    },
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '4.8',
-      reviewCount: '127',
-      bestRating: '5',
-      worstRating: '1'
     },
   }
 
@@ -187,21 +180,16 @@ export function LocalBusinessSchema() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Store',
-    '@id': 'https://waziristaninaturals.com/#store',
+    '@id': 'https://waziristaninaturals.store/#store',
     name: 'Waziristani Naturals',
-    image: 'https://waziristaninaturals.com/logo.png',
-    url: 'https://waziristaninaturals.com',
+    image: 'https://waziristaninaturals.store/logo.jpg',
+    url: 'https://waziristaninaturals.store',
     telephone: '+92-336-8885780',
     email: 'waziristaninaturals@gmail.com',
     address: {
       '@type': 'PostalAddress',
       addressCountry: 'PK',
       addressRegion: 'Khyber Pakhtunkhwa',
-    },
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude: 33.0,
-      longitude: 70.0
     },
     priceRange: 'Rs. 1,699 - Rs. 6,199',
     currenciesAccepted: 'PKR',

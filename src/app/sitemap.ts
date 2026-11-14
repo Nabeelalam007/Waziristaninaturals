@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 import { products } from '@/data/products'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://waziristaninaturals.com'
+  const baseUrl = 'https://waziristaninaturals.store'
   
   // Static pages
   const staticPages = [
@@ -29,6 +29,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,
       priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/privacy-policy`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.5,
+    },
+    {
+      url: `${baseUrl}/terms-and-conditions`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.5,
+    },
+    {
+      url: `${baseUrl}/shipping-policy`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.5,
+    },
+    {
+      url: `${baseUrl}/returns-refunds-policy`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.5,
     },
   ]
 

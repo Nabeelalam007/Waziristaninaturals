@@ -13,26 +13,39 @@ export const metadata: Metadata = {
   title: "Buy Pure Shilajit & Lab-Certified Zaitoon Oil | Rs.1,700-2,000 | Free Delivery 🇵🇰",
   description: "⭐ Lab-Certified Pure Zaitoon Oil Rs.1,700-6,200 ⭐ Pure Shilajit 10g Rs.2,000 ⭐ FREE Delivery All Pakistan ⭐ Cash on Delivery (COD) ⭐ 100% Quality Guaranteed ⭐ Order on WhatsApp +92-336-8885780",
   alternates: {
-    canonical: "https://waziristaninaturals.com",
+    canonical: "https://waziristaninaturals.store",
   },
   openGraph: {
     title: "Buy Pure Shilajit Rs.2,000 & Lab-Certified Zaitoon Oil | Free Delivery Pakistan 🇵🇰",
     description: "✓ Lab-Certified Zaitoon Oil ✓ Pure Mountain Shilajit ✓ Free Delivery ✓ COD Available ✓ 100% Quality Guaranteed",
-    url: "https://waziristaninaturals.com",
+    url: "https://waziristaninaturals.store",
   },
 };
 
 export default function HomePage() {
   return <>
     <section className="hero">
-      {/* Placeholder gradient background for initial load */}
-      <div className="hero-bg" style={{
-        background: 'linear-gradient(135deg, #0a2e1c 0%, #1a4d2e 50%, #2d5a3d 100%)',
+      {/* Beautiful Waziristan Mountains Background */}
+      <div className="hero-bg">
+        <Image 
+          src="/waziristan-mountains.jpg"
+          alt="Beautiful mountains and green valleys of Waziristan"
+          fill
+          style={{ 
+            objectFit: 'cover',
+            objectPosition: 'center'
+          }}
+          quality={90}
+          priority
+        />
+      </div>
+      <div className="hero-shade" style={{
         position: 'absolute',
-        inset: 0
-      }} />
-      <div className="hero-shade"/>
-      <div className="container hero-content">
+        inset: 0,
+        background: 'linear-gradient(135deg, rgba(10, 46, 28, 0.85) 0%, rgba(26, 77, 46, 0.75) 50%, rgba(45, 90, 61, 0.8) 100%)',
+        zIndex: 1
+      }}/>
+      <div className="container hero-content" style={{ position: 'relative', zIndex: 2 }}>
         <div className="hero-copy">
           <span className="eyebrow eyebrow-light"><span/> ROOTED IN NATURE, INSPIRED BY WAZIRISTAN</span>
           <h1>Buy Premium Shilajit & Zaitoon Oil in Pakistan<br/><em>Natural Products</em> from Waziristan</h1>
@@ -42,7 +55,7 @@ export default function HomePage() {
         </div>
         <div className="hero-stamp"><span>W</span><small>WAZIRISTANI<br/>NATURALS</small><i>PURE · NATURAL · THOUGHTFUL</i></div>
       </div>
-      <a className="scroll-cue" href="#collection"><ArrowDown size={16}/> DISCOVER</a>
+      <a className="scroll-cue" href="#collection" style={{ position: 'relative', zIndex: 2 }}><ArrowDown size={16}/> DISCOVER</a>
     </section>
 
     <section className="trust-strip"><div className="container trust-items"><span><Leaf/> Lab-Certified Quality</span><span><PackageCheck/> Cash on Delivery (COD)</span><span><HeartHandshake/> 100% Authentic Products</span></div></section>
@@ -56,10 +69,24 @@ export default function HomePage() {
     </section>
 
     <section className="story-band">
-      <div className="story-image" style={{
-        background: 'linear-gradient(135deg, #2d5a3d 0%, #1a4d2e 50%, #0a2e1c 100%)',
-        position: 'relative'
-      }} />
+      <div className="story-image">
+        <Image 
+          src="/waziristan-mountains.jpg"
+          alt="Beautiful green valleys and mountains of Waziristan - Natural landscape inspiration"
+          fill
+          style={{ 
+            objectFit: 'cover',
+            objectPosition: 'center 40%'
+          }}
+          quality={90}
+          priority
+        />
+        <div style={{
+          position: 'absolute',
+          inset: 0,
+          background: 'linear-gradient(135deg, rgba(10, 46, 28, 0.75) 0%, rgba(26, 77, 46, 0.65) 50%, rgba(45, 90, 61, 0.7) 100%)'
+        }} />
+      </div>
       <div className="story-content"><div className="section-kicker section-kicker-gold">A PLACE, A STORY, A PROMISE</div><h2>Inspired by the land.<br/><em>Made for everyday.</em></h2><p>Waziristani Naturals is built around a simple idea: bring products inspired by the region&apos;s natural heritage to people who value thoughtful choices. We are starting with Shilajit and Zaitoon Oil, and growing with our customers.</p><Link href="/about" className="button button-gold">Discover our story <ArrowRight size={16}/></Link></div>
     </section>
 

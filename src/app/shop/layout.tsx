@@ -15,12 +15,12 @@ export const metadata: Metadata = {
     'Shilajit online shopping Pakistan',
   ],
   alternates: {
-    canonical: 'https://waziristaninaturals.com/shop',
+    canonical: 'https://waziristaninaturals.store/shop',
   },
   openGraph: {
     title: 'Shop Lab-Certified Products | All Sizes | Free Delivery 🇵🇰',
     description: '✓ Lab-Certified Zaitoon Oil Rs.1,700-6,200 ✓ Shilajit Rs.2,000 ✓ Compare prices & sizes',
-    url: 'https://waziristaninaturals.com/shop',
+    url: 'https://waziristaninaturals.store/shop',
   },
 }
 

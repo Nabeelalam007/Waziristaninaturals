@@ -4,7 +4,10 @@ const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
       { protocol: "https", hostname: "images.unsplash.com" }
-    ]
+    ],
+    // Allow local images and disable optimization issues
+    unoptimized: false,
+    formats: ['image/avif', 'image/webp']
   },
   
   // Security headers

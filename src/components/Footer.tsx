@@ -18,9 +18,9 @@ export default function Footer() {
         </div>
         <div><h4>Explore</h4><Link href="/shop">Shop all</Link><Link href="/about">Our story</Link><Link href="/contact">Contact</Link></div>
         <div><h4>Our products</h4><Link href="/products/zaitoon-oil">Zaitoon Oil</Link><Link href="/products/shilajit">Shilajit</Link><Link href="/shop">Special Offers</Link></div>
-        <div><h4>Support</h4><Link href="/contact">Contact us</Link><Link href="/about">About us</Link><span className="footer-note">COD Available · Quality Guaranteed</span></div>
+        <div><h4>Support</h4><Link href="/contact">Contact us</Link><Link href="/shipping-policy">Shipping</Link><Link href="/returns-refunds-policy">Returns</Link><Link href="/privacy-policy">Privacy</Link></div>
       </div>
-      <div className="container footer-bottom"><span>© {new Date().getFullYear()} Waziristani Naturals</span><span>Pure Nature · Authentic Quality · Free Delivery</span></div>
+      <div className="container footer-bottom"><span>© {new Date().getFullYear()} Waziristani Naturals</span><span>Pure Nature · Authentic Quality · Free Delivery</span><div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center', marginTop: '8px' }}><Link href="/terms-and-conditions" style={{ fontSize: '12px', color: '#929486' }}>Terms</Link><Link href="/privacy-policy" style={{ fontSize: '12px', color: '#929486' }}>Privacy</Link><Link href="/shipping-policy" style={{ fontSize: '12px', color: '#929486' }}>Shipping</Link><Link href="/returns-refunds-policy" style={{ fontSize: '12px', color: '#929486' }}>Returns</Link></div></div>
     </footer>
   );
 }
