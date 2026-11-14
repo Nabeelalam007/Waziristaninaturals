@@ -33,25 +33,43 @@ function ProductCard({ product }: { product: Product }) {
     <article className={`product-card ${product.isCombo ? 'combo-special' : ''}`}>
       <Link href={`/products/${product.slug}`} className="product-image-wrap">
         {product.isCombo && product.secondaryImage ? (
-          // Show both images side by side for combo products
-          <div style={{ display: 'flex', width: '100%', height: '100%', gap: '10px', padding: '20px' }}>
-            <div style={{ flex: 1, position: 'relative' }}>
+          // Show both images side by side in proper square shapes for combo products
+          <div style={{ 
+            display: 'flex', 
+            width: '100%', 
+            height: '100%', 
+            gap: '10px', 
+            padding: '20px',
+            alignItems: 'center',
+            justifyContent: 'center'
+          }}>
+            <div style={{ 
+              flex: 1, 
+              position: 'relative',
+              aspectRatio: '1/1',
+              maxWidth: '50%'
+            }}>
               <Image 
                 src={product.image} 
                 alt={`${product.name} - Zaitoon Oil`}
                 fill
-                sizes="(max-width: 700px) 50vw, (max-width: 1024px) 25vw, 200px" 
+                sizes="(max-width: 700px) 40vw, (max-width: 1024px) 20vw, 150px" 
                 style={{ objectFit: 'contain' }}
                 loading="lazy"
                 quality={90}
               />
             </div>
-            <div style={{ flex: 1, position: 'relative' }}>
+            <div style={{ 
+              flex: 1, 
+              position: 'relative',
+              aspectRatio: '1/1',
+              maxWidth: '50%'
+            }}>
               <Image 
                 src={product.secondaryImage} 
                 alt={`${product.name} - Shilajit`}
                 fill
-                sizes="(max-width: 700px) 50vw, (max-width: 1024px) 25vw, 200px" 
+                sizes="(max-width: 700px) 40vw, (max-width: 1024px) 20vw, 150px" 
                 style={{ objectFit: 'contain' }}
                 loading="lazy"
                 quality={90}

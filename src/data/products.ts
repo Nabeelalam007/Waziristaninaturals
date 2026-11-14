@@ -19,12 +19,12 @@ export const products: Product[] = [
     name: "Zaitoon Oil",
     category: "Oil",
     description: "Premium cold-pressed olive oil in food-grade plastic packaging. 250ml & 500ml in convenient pump dispenser jars, 750ml & 1000ml in flip-top bottles. Perfect for cooking, hair care, and skin wellness.",
-    image: "/oil.jpg", // Plastic bottle image
+    image: "/oil.jpg", // Default plastic bottle image (250ml)
     options: [
       { label: "250 ml", price: 1699, originalPrice: 1699, image: "/oil.jpg" },
-      { label: "500 ml", price: 3299, originalPrice: 3299, image: "/oil-500ml.png" },
-      { label: "750 ml", price: 5099, originalPrice: 5099, image: "/oil.jpg" },
-      { label: "1000 ml", price: 6199, originalPrice: 6199, image: "/oil.jpg" }
+      { label: "500 ml", price: 3299, originalPrice: 3299, image: "/oil(500ml).jpg" },
+      { label: "750 ml", price: 5099, originalPrice: 5099, image: "/oil(750ml).jpg" },
+      { label: "1000 ml", price: 6199, originalPrice: 6199, image: "/oil(1000ml).jpg" }
     ],
     badge: "Lab Certified",
     guaranteed: true
@@ -46,7 +46,7 @@ export const products: Product[] = [
     name: "Wellness Starter Pack",
     category: "Combo",
     description: "Perfect introduction to natural wellness - 10g Shilajit jar + 250ml Zaitoon Oil in plastic bottle at special combo price. Both products guaranteed.",
-    image: "/oil.jpg", // Primary: Zaitoon Oil
+    image: "/oil.jpg", // Primary: Zaitoon Oil 250ml
     secondaryImage: "/sil.jpg", // Secondary: Shilajit
     options: [{ label: "Combo Pack", price: 3499, originalPrice: 3698 }],
     badge: "Best Value",
@@ -59,7 +59,7 @@ export const products: Product[] = [
     name: "Family Bundle",
     category: "Combo",
     description: "Stock up and save - Two 1 liter plastic bottles of premium Zaitoon Oil at an exclusive bundle price. Quality guaranteed.",
-    image: "/oil.jpg", // Use plastic bottle
+    image: "/oil(1000ml).jpg", // Use 1000ml plastic bottle
     options: [{ label: "2 × 1000 ml", price: 11999, originalPrice: 12398 }],
     badge: "Family Size",
     isCombo: true,
