@@ -33,43 +33,47 @@ function ProductCard({ product }: { product: Product }) {
     <article className={`product-card ${product.isCombo ? 'combo-special' : ''}`}>
       <Link href={`/products/${product.slug}`} className="product-image-wrap">
         {product.isCombo && product.secondaryImage ? (
-          // Show both images side by side in proper square shapes for combo products
+          // Show both images side by side with EQUAL outer container sizes
           <div style={{ 
             display: 'flex', 
             width: '100%', 
             height: '100%', 
-            gap: '10px', 
-            padding: '20px',
+            gap: '8px', 
+            padding: '15px',
             alignItems: 'center',
             justifyContent: 'center'
           }}>
             <div style={{ 
-              flex: 1, 
               position: 'relative',
+              width: 'calc(50% - 4px)',
               aspectRatio: '1/1',
-              maxWidth: '50%'
+              flexShrink: 0,
+              minWidth: '120px',
+              maxWidth: '160px'
             }}>
               <Image 
                 src={product.image} 
                 alt={`${product.name} - Zaitoon Oil`}
                 fill
-                sizes="(max-width: 700px) 40vw, (max-width: 1024px) 20vw, 150px" 
+                sizes="(max-width: 700px) 150px, 160px" 
                 style={{ objectFit: 'contain' }}
                 loading="lazy"
                 quality={90}
               />
             </div>
             <div style={{ 
-              flex: 1, 
               position: 'relative',
+              width: 'calc(50% - 4px)',
               aspectRatio: '1/1',
-              maxWidth: '50%'
+              flexShrink: 0,
+              minWidth: '120px',
+              maxWidth: '160px'
             }}>
               <Image 
                 src={product.secondaryImage} 
                 alt={`${product.name} - Shilajit`}
                 fill
-                sizes="(max-width: 700px) 40vw, (max-width: 1024px) 20vw, 150px" 
+                sizes="(max-width: 700px) 150px, 160px" 
                 style={{ objectFit: 'contain' }}
                 loading="lazy"
                 quality={90}

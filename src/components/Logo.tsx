@@ -18,7 +18,11 @@ export default function Logo({ light = false }: { light?: boolean }) {
         position: 'relative',
         width: '48px',
         height: '48px',
-        flexShrink: 0
+        flexShrink: 0,
+        background: 'linear-gradient(135deg, #e8f0dc 0%, #d9e6c8 100%)',
+        borderRadius: '8px',
+        padding: '4px',
+        boxShadow: '0 2px 8px rgba(122, 155, 71, 0.2)'
       }}>
         <Image
           src="/logo.jpg"
@@ -28,7 +32,8 @@ export default function Logo({ light = false }: { light?: boolean }) {
           style={{ 
             objectFit: 'contain',
             width: '100%',
-            height: '100%'
+            height: '100%',
+            borderRadius: '6px'
           }}
           priority
           unoptimized

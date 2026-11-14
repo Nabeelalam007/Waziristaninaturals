@@ -120,6 +120,7 @@ export default function ProductPage() {
           <div className="detail-layout">
             <div className="detail-image">
               <Image 
+                key={option.image || product.image}
                 src={option.image || product.image}
                 alt={isZaitoonOil ? `Waziristani Naturals Zaitoon Olive Oil ${option.label} in food-grade plastic bottle - Premium quality` : `Waziristani Naturals Shilajit 10g jar - Pure mountain resin`}
                 fill 
