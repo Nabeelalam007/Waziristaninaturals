@@ -8,7 +8,7 @@ export function OrganizationSchema() {
     name: 'Waziristani Naturals',
     alternateName: 'Waziristan Naturals',
     url: 'https://waziristaninaturals.store',
-    logo: 'https://waziristaninaturals.store/logo.jpg',
+    logo: 'https://waziristaninaturals.store/Logo ori.jpg',
     description: 'Premium natural products including Shilajit and Zaitoon Olive Oil from Pakistan with free delivery nationwide',
     address: {
       '@type': 'PostalAddress',
@@ -182,7 +182,7 @@ export function LocalBusinessSchema() {
     '@type': 'Store',
     '@id': 'https://waziristaninaturals.store/#store',
     name: 'Waziristani Naturals',
-    image: 'https://waziristaninaturals.store/logo.jpg',
+    image: 'https://waziristaninaturals.store/Logo ori.jpg',
     url: 'https://waziristaninaturals.store',
     telephone: '+92-336-8885780',
     email: 'waziristaninaturals@gmail.com',

@@ -24,7 +24,7 @@ export default function Logo({ light = false }: { light?: boolean }) {
         padding: '2px'
       }}>
         <Image
-          src="/logo.jpg"
+          src="/Logo ori.jpg"
           alt="Waziristani Naturals Logo"
           width={52}
           height={52}

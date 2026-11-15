@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     description: "✓ Lab-Certified Zaitoon Oil Rs.1,700 ✓ Pure Shilajit Rs.2,000 ✓ FREE Delivery ✓ COD Available",
     images: [
       {
-        url: "/logo.jpg",
+        url: "/Logo ori.jpg",
         width: 1200,
         height: 630,
         alt: "Waziristani Naturals - Lab-Certified Zaitoon Oil & Pure Shilajit Pakistan",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Buy Shilajit & Lab-Certified Zaitoon Oil | Free Delivery Pakistan 🇵🇰",
     description: "✓ Lab-Certified Zaitoon Oil Rs.1,700 ✓ Pure Shilajit Rs.2,000 ✓ COD Available",
-    images: ["/logo.jpg"],
+    images: ["/Logo ori.jpg"],
   },
   robots: {
     index: true,
@@ -79,8 +79,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en-PK">
       <head>
-        <link rel="icon" href="/logo.jpg" type="image/jpeg" />
-        <link rel="apple-touch-icon" href="/logo.jpg" />
+        <link rel="icon" href="/Logo ori.jpg" type="image/jpeg" />
+        <link rel="apple-touch-icon" href="/Logo ori.jpg" />
         <meta name="theme-color" content="#123524" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />

@@ -32,7 +32,7 @@ export default function Footer() {
               }}
             >
               <Image
-                src="/logo.jpg"
+                src="/Logo ori.jpg"
                 alt="Waziristani Naturals Logo"
                 width={80}
                 height={80}

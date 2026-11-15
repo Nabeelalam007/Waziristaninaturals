@@ -75,7 +75,7 @@ export default function HomePage() {
             zIndex: 10
           }}>
             <Image 
-              src="/logo.jpg"
+              src="/Logo ori.jpg"
               alt="Waziristani Naturals"
               width={80}
               height={80}
