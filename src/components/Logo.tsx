@@ -36,7 +36,7 @@ export default function Logo({ light = false }: { light?: boolean }) {
             mixBlendMode: 'multiply'
           }}
           priority
-          unoptimized
+          quality={90}
         />
       </div>
       <span className="brand-words">

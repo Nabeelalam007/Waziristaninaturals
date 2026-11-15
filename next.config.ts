@@ -5,10 +5,17 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       { protocol: "https", hostname: "images.unsplash.com" }
     ],
-    // Allow local images and disable optimization issues
-    unoptimized: false,
-    formats: ['image/avif', 'image/webp']
+    formats: ['image/avif', 'image/webp'],
+    deviceSizes: [640, 750, 828, 1080, 1200],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    minimumCacheTTL: 60,
   },
+  
+  // Enable compression
+  compress: true,
+  
+  // Production optimizations
+  productionBrowserSourceMaps: false,
   
   // Security headers
   async headers() {

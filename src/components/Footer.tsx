@@ -43,8 +43,8 @@ export default function Footer() {
                   borderRadius: '8px',
                   mixBlendMode: 'multiply'
                 }}
-                priority
-                unoptimized
+                quality={85}
+                loading="lazy"
               />
             </Link>
             {/* Tagline beside logo */}

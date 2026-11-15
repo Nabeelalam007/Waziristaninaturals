@@ -35,8 +35,9 @@ export default function HomePage() {
             objectFit: 'cover',
             objectPosition: 'center'
           }}
-          quality={90}
+          quality={85}
           priority
+          sizes="100vw"
         />
       </div>
       <div className="hero-shade" style={{
@@ -66,6 +67,8 @@ export default function HomePage() {
               width={50}
               height={50}
               style={{ borderRadius: '10px', mixBlendMode: 'multiply' }}
+              quality={85}
+              loading="eager"
             />
             <span style={{ 
               color: '#d8d9cb', 
