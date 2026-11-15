@@ -62,29 +62,28 @@ export default function HomePage() {
             </Link>
           </div>
           
-          {/* Logo and DISCOVER section - smaller logo, fully visible */}
+          {/* Logo and DISCOVER section - same size as navbar logo */}
           <div style={{ 
             display: 'flex',
             alignItems: 'center',
-            gap: '14px',
-            marginTop: '30px',
-            marginBottom: '40px',
+            gap: '12px',
+            marginTop: '25px',
+            marginBottom: '25px',
             position: 'relative',
             zIndex: 10
           }}>
             <div style={{
-              background: 'rgba(249, 246, 237, 0.98)',
-              padding: '8px',
-              borderRadius: '10px',
-              border: '2px solid rgba(212, 169, 89, 0.4)',
+              background: '#0f4d2e',
+              padding: '4px',
+              borderRadius: '8px',
               flexShrink: 0,
-              boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)'
+              boxShadow: '0 3px 8px rgba(0, 0, 0, 0.15)'
             }}>
               <Image 
                 src="/logo.jpg"
                 alt="Waziristani Naturals"
-                width={45}
-                height={45}
+                width={52}
+                height={52}
                 style={{ 
                   borderRadius: '6px',
                   display: 'block',
@@ -97,7 +96,7 @@ export default function HomePage() {
             <div style={{ 
               display: 'flex',
               flexDirection: 'column',
-              gap: '5px',
+              gap: '4px',
               justifyContent: 'center'
             }}>
               <span style={{ 
@@ -112,7 +111,7 @@ export default function HomePage() {
               <span style={{ 
                 color: '#d8d9cb', 
                 fontSize: '12px', 
-                lineHeight: '1.5',
+                lineHeight: '1.4',
                 fontWeight: '400'
               }}>
                 Inspired by the natural beauty of Waziristan · Free Delivery · COD Available
