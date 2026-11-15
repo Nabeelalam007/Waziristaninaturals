@@ -33,7 +33,8 @@ export default function Logo({ light = false }: { light?: boolean }) {
             width: '100%',
             height: '100%',
             borderRadius: '8px',
-            mixBlendMode: 'multiply'
+            background: '#0f4d2e',
+            padding: '4px'
           }}
           priority
           quality={95}

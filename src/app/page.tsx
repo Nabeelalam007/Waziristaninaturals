@@ -68,7 +68,9 @@ export default function HomePage() {
               style={{ 
                 borderRadius: '12px', 
                 mixBlendMode: 'multiply',
-                flexShrink: 0
+                flexShrink: 0,
+                background: '#0f4d2e',
+                padding: '6px'
               }}
               quality={90}
               loading="eager"

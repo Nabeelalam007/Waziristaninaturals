@@ -41,8 +41,8 @@ export default function Footer() {
                   width: '100%',
                   height: '100%',
                   borderRadius: '10px',
-                  background: '#f9f6ed',
-                  padding: '4px'
+                  background: '#0f4d2e',
+                  padding: '6px'
                 }}
                 quality={95}
                 loading="lazy"
