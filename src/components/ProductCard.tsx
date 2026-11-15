@@ -81,9 +81,10 @@ function ProductCard({ product }: { product: Product }) {
             </div>
           </div>
         ) : (
-          // Single image for regular products
+          // Single image for regular products - use size-specific image if available
           <Image 
-            src={product.image} 
+            key={option.image || product.image}
+            src={option.image || product.image} 
             alt={getAltText(product.id)} 
             fill 
             sizes="(max-width: 700px) 100vw, (max-width: 1024px) 50vw, 400px" 
