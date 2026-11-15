@@ -53,41 +53,53 @@ export default function HomePage() {
           <p>Discover authentic Shilajit 10g and premium Zaitoon Olive Oil in multiple sizes. Inspired by the natural heritage of Waziristan. Free delivery nationwide with Cash on Delivery!</p>
           <div className="hero-buttons"><Link href="/shop" className="button button-gold">Explore the collection <ArrowRight size={17}/></Link><Link href="/about" className="button button-outline-light">Our story</Link></div>
           
-          {/* Logo and tagline below buttons */}
+          {/* Logo and DISCOVER section - aligned left */}
           <div style={{ 
             display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            gap: '12px',
-            marginTop: '32px'
+            alignItems: 'flex-start',
+            gap: '20px',
+            marginTop: '40px'
           }}>
             <Image 
               src="/logo.jpg"
               alt="Waziristani Naturals"
-              width={50}
-              height={50}
-              style={{ borderRadius: '10px', mixBlendMode: 'multiply' }}
-              quality={85}
+              width={70}
+              height={70}
+              style={{ 
+                borderRadius: '12px', 
+                mixBlendMode: 'multiply',
+                flexShrink: 0
+              }}
+              quality={90}
               loading="eager"
             />
-            <span style={{ 
-              color: '#d8d9cb', 
-              fontSize: '13px', 
-              lineHeight: '1.6',
-              textAlign: 'center',
-              display: 'block',
-              fontWeight: '400',
-              maxWidth: '90%'
+            <div style={{ 
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '8px'
             }}>
-              Inspired by the natural beauty of Waziristan · Free Delivery · COD Available
-            </span>
+              <span style={{ 
+                color: '#d4a959', 
+                fontSize: '11px', 
+                fontWeight: '700',
+                letterSpacing: '0.15em',
+                textTransform: 'uppercase'
+              }}>
+                DISCOVER
+              </span>
+              <span style={{ 
+                color: '#d8d9cb', 
+                fontSize: '14px', 
+                lineHeight: '1.6',
+                fontWeight: '400'
+              }}>
+                Inspired by the natural beauty of Waziristan · Free Delivery · COD Available
+              </span>
+            </div>
           </div>
         </div>
         <div className="hero-stamp"><span>W</span><small>WAZIRISTANI<br/>NATURALS</small><i>PURE · NATURAL · THOUGHTFUL</i></div>
       </div>
-      <a className="scroll-cue" href="#collection" style={{ position: 'absolute', zIndex: 3, bottom: '20px', left: '50%', transform: 'translateX(-50%)', display: 'flex', alignItems: 'center', gap: '8px', color: '#eee5d1', fontSize: '10px', letterSpacing: '0.2em', fontWeight: '600' }}>
-        <ArrowDown size={16}/> DISCOVER
-      </a>
     </section>
 
     <section className="trust-strip"><div className="container trust-items"><span><Leaf/> Lab-Certified Quality</span><span><PackageCheck/> Cash on Delivery (COD)</span><span><HeartHandshake/> 100% Authentic Products</span></div></section>
