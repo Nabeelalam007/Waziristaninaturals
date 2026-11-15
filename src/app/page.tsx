@@ -54,31 +54,40 @@ export default function HomePage() {
         </div>
         <div className="hero-stamp"><span>W</span><small>WAZIRISTANI<br/>NATURALS</small><i>PURE · NATURAL · THOUGHTFUL</i></div>
       </div>
-      <a className="scroll-cue" href="#collection" style={{ position: 'absolute', zIndex: 3, bottom: '85px', left: '50%', transform: 'translateX(-50%)', display: 'flex', alignItems: 'center', gap: '8px', color: '#eee5d1', fontSize: '10px', letterSpacing: '0.2em', fontWeight: '600' }}>
+      <a className="scroll-cue" href="#collection" style={{ position: 'absolute', zIndex: 3, bottom: '110px', left: '50%', transform: 'translateX(-50%)', display: 'flex', alignItems: 'center', gap: '8px', color: '#eee5d1', fontSize: '10px', letterSpacing: '0.2em', fontWeight: '600' }}>
         <ArrowDown size={16}/> DISCOVER
       </a>
       <div style={{ 
         position: 'absolute', 
         zIndex: 2, 
-        bottom: '20px', 
+        bottom: '15px', 
         left: '50%', 
         transform: 'translateX(-50%)',
         display: 'flex',
+        flexDirection: 'column',
         alignItems: 'center',
-        gap: '12px',
-        padding: '12px 20px',
-        background: 'rgba(10, 46, 28, 0.6)',
-        borderRadius: '8px',
-        backdropFilter: 'blur(8px)'
+        gap: '10px',
+        padding: '16px 24px',
+        background: 'rgba(10, 46, 28, 0.75)',
+        borderRadius: '10px',
+        backdropFilter: 'blur(10px)',
+        maxWidth: '90%',
+        width: 'auto'
       }}>
         <Image 
           src="/logo.jpg"
           alt="Waziristani Naturals"
-          width={32}
-          height={32}
-          style={{ borderRadius: '6px' }}
+          width={40}
+          height={40}
+          style={{ borderRadius: '8px' }}
         />
-        <span style={{ color: '#d8d9cb', fontSize: '11px', lineHeight: '1.4' }}>
+        <span style={{ 
+          color: '#d8d9cb', 
+          fontSize: '11px', 
+          lineHeight: '1.5',
+          textAlign: 'center',
+          display: 'block'
+        }}>
           Inspired by the natural beauty of Waziristan · Free Delivery · COD Available
         </span>
       </div>
