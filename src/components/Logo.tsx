@@ -26,8 +26,8 @@ export default function Logo({ light = false }: { light?: boolean }) {
         <Image
           src="/logo.jpg"
           alt="Waziristani Naturals Logo"
-          width={64}
-          height={64}
+          width={52}
+          height={52}
           style={{ 
             objectFit: 'contain',
             width: '100%',

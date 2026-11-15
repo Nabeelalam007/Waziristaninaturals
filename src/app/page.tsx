@@ -47,7 +47,7 @@ export default function HomePage() {
         zIndex: 1
       }}/>
       <div className="container hero-content" style={{ position: 'relative', zIndex: 2 }}>
-        <div className="hero-copy">
+        <div className="hero-copy" style={{ paddingTop: '30px' }}>
           <span className="eyebrow eyebrow-light"><span/> ROOTED IN NATURE, INSPIRED BY WAZIRISTAN</span>
           <h1>Buy Premium Shilajit & Zaitoon Oil in Pakistan<br/><em>Natural Products</em> from Waziristan</h1>
           <p>Discover authentic Shilajit 10g and premium Zaitoon Olive Oil in multiple sizes. Inspired by the natural heritage of Waziristan. Free delivery nationwide with Cash on Delivery!</p>
@@ -62,20 +62,20 @@ export default function HomePage() {
             </Link>
           </div>
           
-          {/* Logo and DISCOVER section - aligned left with full logo visibility and proper spacing */}
+          {/* Logo and DISCOVER section - smaller logo, clear visibility */}
           <div style={{ 
             display: 'flex',
             alignItems: 'center',
-            gap: '20px',
-            marginTop: '40px',
-            marginBottom: '60px',
+            gap: '16px',
+            marginTop: '35px',
+            marginBottom: '50px',
             position: 'relative',
             zIndex: 10
           }}>
             <div style={{
               background: 'rgba(249, 246, 237, 0.98)',
-              padding: '14px',
-              borderRadius: '14px',
+              padding: '10px',
+              borderRadius: '12px',
               border: '2px solid rgba(212, 169, 89, 0.4)',
               flexShrink: 0,
               boxShadow: '0 6px 16px rgba(0, 0, 0, 0.2)'
@@ -83,8 +83,8 @@ export default function HomePage() {
               <Image 
                 src="/logo.jpg"
                 alt="Waziristani Naturals"
-                width={70}
-                height={70}
+                width={55}
+                height={55}
                 style={{ 
                   borderRadius: '8px',
                   display: 'block',
@@ -97,7 +97,7 @@ export default function HomePage() {
             <div style={{ 
               display: 'flex',
               flexDirection: 'column',
-              gap: '8px',
+              gap: '6px',
               justifyContent: 'center'
             }}>
               <span style={{ 
@@ -111,8 +111,8 @@ export default function HomePage() {
               </span>
               <span style={{ 
                 color: '#d8d9cb', 
-                fontSize: '14px', 
-                lineHeight: '1.6',
+                fontSize: '13px', 
+                lineHeight: '1.5',
                 fontWeight: '400'
               }}>
                 Inspired by the natural beauty of Waziristan · Free Delivery · COD Available
