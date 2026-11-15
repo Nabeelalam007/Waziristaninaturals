@@ -70,7 +70,7 @@ export default function HomePage() {
             alignItems: 'center',
             gap: '16px',
             marginTop: '25px',
-            marginBottom: '25px',
+            marginBottom: '50px',
             position: 'relative',
             zIndex: 10
           }}>
