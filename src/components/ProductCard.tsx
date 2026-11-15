@@ -32,8 +32,8 @@ function ProductCard({ product }: { product: Product }) {
   return (
     <article className={`product-card ${product.isCombo ? 'combo-special' : ''}`}>
       <Link href={`/products/${product.slug}`} className="product-image-wrap">
-        {product.isCombo && product.secondaryImage ? (
-          // Show both images side by side with EQUAL outer container sizes
+        {product.isCombo && product.secondaryImage && product.secondaryImage !== "" ? (
+          // Show both images side by side for combo products with secondary image
           <div style={{ 
             display: 'flex', 
             width: '100%', 
@@ -81,7 +81,7 @@ function ProductCard({ product }: { product: Product }) {
             </div>
           </div>
         ) : (
-          // Single image for regular products - use size-specific image if available
+          // Single image for regular products and combos with single image
           <Image 
             key={option.image || product.image}
             src={option.image || product.image} 
