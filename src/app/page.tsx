@@ -51,11 +51,37 @@ export default function HomePage() {
           <h1>Buy Premium Shilajit & Zaitoon Oil in Pakistan<br/><em>Natural Products</em> from Waziristan</h1>
           <p>Discover authentic Shilajit 10g and premium Zaitoon Olive Oil in multiple sizes. Inspired by the natural heritage of Waziristan. Free delivery nationwide with Cash on Delivery!</p>
           <div className="hero-buttons"><Link href="/shop" className="button button-gold">Explore the collection <ArrowRight size={17}/></Link><Link href="/about" className="button button-outline-light">Our story</Link></div>
-          <div className="hero-footnote"><Mountain size={17}/> Inspired by the natural beauty of Waziristan · Free Delivery · COD Available</div>
         </div>
         <div className="hero-stamp"><span>W</span><small>WAZIRISTANI<br/>NATURALS</small><i>PURE · NATURAL · THOUGHTFUL</i></div>
       </div>
-      <a className="scroll-cue" href="#collection" style={{ position: 'relative', zIndex: 2 }}><ArrowDown size={16}/> DISCOVER</a>
+      <a className="scroll-cue" href="#collection" style={{ position: 'absolute', zIndex: 3, bottom: '85px', left: '50%', transform: 'translateX(-50%)', display: 'flex', alignItems: 'center', gap: '8px', color: '#eee5d1', fontSize: '10px', letterSpacing: '0.2em', fontWeight: '600' }}>
+        <ArrowDown size={16}/> DISCOVER
+      </a>
+      <div style={{ 
+        position: 'absolute', 
+        zIndex: 2, 
+        bottom: '20px', 
+        left: '50%', 
+        transform: 'translateX(-50%)',
+        display: 'flex',
+        alignItems: 'center',
+        gap: '12px',
+        padding: '12px 20px',
+        background: 'rgba(10, 46, 28, 0.6)',
+        borderRadius: '8px',
+        backdropFilter: 'blur(8px)'
+      }}>
+        <Image 
+          src="/logo.jpg"
+          alt="Waziristani Naturals"
+          width={32}
+          height={32}
+          style={{ borderRadius: '6px' }}
+        />
+        <span style={{ color: '#d8d9cb', fontSize: '11px', lineHeight: '1.4' }}>
+          Inspired by the natural beauty of Waziristan · Free Delivery · COD Available
+        </span>
+      </div>
     </section>
 
     <section className="trust-strip"><div className="container trust-items"><span><Leaf/> Lab-Certified Quality</span><span><PackageCheck/> Cash on Delivery (COD)</span><span><HeartHandshake/> 100% Authentic Products</span></div></section>
