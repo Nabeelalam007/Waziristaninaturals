@@ -62,31 +62,31 @@ export default function HomePage() {
             </Link>
           </div>
           
-          {/* Logo and DISCOVER section - smaller logo, clear visibility */}
+          {/* Logo and DISCOVER section - smaller logo, fully visible */}
           <div style={{ 
             display: 'flex',
             alignItems: 'center',
-            gap: '16px',
-            marginTop: '35px',
-            marginBottom: '50px',
+            gap: '14px',
+            marginTop: '30px',
+            marginBottom: '40px',
             position: 'relative',
             zIndex: 10
           }}>
             <div style={{
               background: 'rgba(249, 246, 237, 0.98)',
-              padding: '10px',
-              borderRadius: '12px',
+              padding: '8px',
+              borderRadius: '10px',
               border: '2px solid rgba(212, 169, 89, 0.4)',
               flexShrink: 0,
-              boxShadow: '0 6px 16px rgba(0, 0, 0, 0.2)'
+              boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)'
             }}>
               <Image 
                 src="/logo.jpg"
                 alt="Waziristani Naturals"
-                width={55}
-                height={55}
+                width={45}
+                height={45}
                 style={{ 
-                  borderRadius: '8px',
+                  borderRadius: '6px',
                   display: 'block',
                   objectFit: 'contain'
                 }}
@@ -97,12 +97,12 @@ export default function HomePage() {
             <div style={{ 
               display: 'flex',
               flexDirection: 'column',
-              gap: '6px',
+              gap: '5px',
               justifyContent: 'center'
             }}>
               <span style={{ 
                 color: '#d4a959', 
-                fontSize: '11px', 
+                fontSize: '10px', 
                 fontWeight: '700',
                 letterSpacing: '0.15em',
                 textTransform: 'uppercase'
@@ -111,7 +111,7 @@ export default function HomePage() {
               </span>
               <span style={{ 
                 color: '#d8d9cb', 
-                fontSize: '13px', 
+                fontSize: '12px', 
                 lineHeight: '1.5',
                 fontWeight: '400'
               }}>
