@@ -54,39 +54,41 @@ export default function HomePage() {
         </div>
         <div className="hero-stamp"><span>W</span><small>WAZIRISTANI<br/>NATURALS</small><i>PURE · NATURAL · THOUGHTFUL</i></div>
       </div>
-      <a className="scroll-cue" href="#collection" style={{ position: 'absolute', zIndex: 3, bottom: '110px', left: '50%', transform: 'translateX(-50%)', display: 'flex', alignItems: 'center', gap: '8px', color: '#eee5d1', fontSize: '10px', letterSpacing: '0.2em', fontWeight: '600' }}>
+      <a className="scroll-cue" href="#collection" style={{ position: 'absolute', zIndex: 3, bottom: '160px', left: '50%', transform: 'translateX(-50%)', display: 'flex', alignItems: 'center', gap: '8px', color: '#eee5d1', fontSize: '10px', letterSpacing: '0.2em', fontWeight: '600' }}>
         <ArrowDown size={16}/> DISCOVER
       </a>
       <div style={{ 
         position: 'absolute', 
         zIndex: 2, 
-        bottom: '15px', 
+        bottom: '20px', 
         left: '50%', 
         transform: 'translateX(-50%)',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        gap: '10px',
-        padding: '16px 24px',
-        background: 'rgba(10, 46, 28, 0.75)',
-        borderRadius: '10px',
+        gap: '12px',
+        padding: '20px 28px',
+        background: 'rgba(10, 46, 28, 0.85)',
+        borderRadius: '12px',
         backdropFilter: 'blur(10px)',
         maxWidth: '90%',
-        width: 'auto'
+        width: 'auto',
+        border: '1px solid rgba(216, 217, 203, 0.15)'
       }}>
         <Image 
           src="/logo.jpg"
           alt="Waziristani Naturals"
-          width={40}
-          height={40}
-          style={{ borderRadius: '8px' }}
+          width={50}
+          height={50}
+          style={{ borderRadius: '10px', mixBlendMode: 'multiply' }}
         />
         <span style={{ 
           color: '#d8d9cb', 
-          fontSize: '11px', 
-          lineHeight: '1.5',
+          fontSize: '12px', 
+          lineHeight: '1.6',
           textAlign: 'center',
-          display: 'block'
+          display: 'block',
+          fontWeight: '400'
         }}>
           Inspired by the natural beauty of Waziristan · Free Delivery · COD Available
         </span>

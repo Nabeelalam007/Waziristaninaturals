@@ -32,7 +32,8 @@ export default function Logo({ light = false }: { light?: boolean }) {
             objectFit: 'contain',
             width: '100%',
             height: '100%',
-            borderRadius: '6px'
+            borderRadius: '6px',
+            mixBlendMode: 'multiply'
           }}
           priority
           unoptimized
