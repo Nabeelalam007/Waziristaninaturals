@@ -35,7 +35,7 @@ export default function HomePage() {
             objectFit: 'cover',
             objectPosition: 'center'
           }}
-          quality={85}
+          quality={75}
           priority
           sizes="100vw"
         />
@@ -62,20 +62,23 @@ export default function HomePage() {
             </Link>
           </div>
           
-          {/* Logo and DISCOVER section - aligned left with full logo visibility */}
+          {/* Logo and DISCOVER section - aligned left with full logo visibility and proper spacing */}
           <div style={{ 
             display: 'flex',
             alignItems: 'center',
             gap: '20px',
-            marginTop: '40px'
+            marginTop: '40px',
+            marginBottom: '60px',
+            position: 'relative',
+            zIndex: 10
           }}>
             <div style={{
-              background: 'rgba(249, 246, 237, 0.95)',
-              padding: '12px',
-              borderRadius: '12px',
-              border: '2px solid rgba(212, 169, 89, 0.3)',
+              background: 'rgba(249, 246, 237, 0.98)',
+              padding: '14px',
+              borderRadius: '14px',
+              border: '2px solid rgba(212, 169, 89, 0.4)',
               flexShrink: 0,
-              boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)'
+              boxShadow: '0 6px 16px rgba(0, 0, 0, 0.2)'
             }}>
               <Image 
                 src="/logo.jpg"
