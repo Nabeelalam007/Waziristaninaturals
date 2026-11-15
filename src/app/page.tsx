@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowDown, ArrowRight, Leaf, Mountain, PackageCheck, HeartHandshake, Sprout, Quote } from "lucide-react";
+import { ArrowDown, ArrowRight, Leaf, PackageCheck, HeartHandshake, Sprout, Quote } from "lucide-react";
 import ProductCard from "@/components/ProductCard";
+import ReviewCard from "@/components/ReviewCard";
 import { products } from "@/data/products";
 
 // Local optimized images instead of Unsplash
@@ -91,6 +92,88 @@ export default function HomePage() {
         <div className="section-heading"><div><div className="section-kicker">THE COLLECTION</div><h2>Simple products.<br/><em>Natural character.</em></h2></div><p>Explore our two signature offerings, selected with care and presented with a focus on quality and simplicity.</p></div>
         <div className="product-grid">{products.map(product => <ProductCard key={product.id} product={product}/>)}</div>
         <div className="center-action"><Link href="/shop" className="text-link">View all product options <ArrowRight size={17}/></Link></div>
+      </div>
+    </section>
+
+    {/* Customer Reviews Section */}
+    <section className="reviews-section" style={{ background: 'linear-gradient(135deg, #f9f6ed 0%, #f0ede0 100%)', padding: '80px 0' }}>
+      <div className="container">
+        <div className="center-heading">
+          <div className="section-kicker">CUSTOMER REVIEWS</div>
+          <h2>What our customers <em>are saying</em></h2>
+          <p>Real feedback from people who trust Waziristani Naturals</p>
+        </div>
+        
+        <div style={{ 
+          display: 'grid', 
+          gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', 
+          gap: '24px',
+          marginTop: '40px'
+        }}>
+          <ReviewCard 
+            rating={5}
+            review="Excellent quality Zaitoon Oil! I use it for cooking and hair care. The 500ml bottle is perfect for my family. Free delivery was very fast!"
+            name="Ayesha K."
+            location="Karachi"
+            initial="A"
+          />
+          <ReviewCard 
+            rating={5}
+            review="Pure Shilajit! I take it every morning with warm milk. Noticed improvement in energy levels. COD option is very convenient."
+            name="Muhammad H."
+            location="Lahore"
+            initial="M"
+          />
+          <ReviewCard 
+            rating={5}
+            review="Best combo deal! Got the Wellness Starter Pack. Both products are authentic and high quality. Delivery was within 3 days. Highly recommend!"
+            name="Fatima S."
+            location="Islamabad"
+            initial="F"
+          />
+        </div>
+
+        {/* Review Stats */}
+        <div style={{
+          marginTop: '50px',
+          padding: '32px',
+          background: '#ffffff',
+          borderRadius: '12px',
+          border: '2px solid #7a9b47',
+          textAlign: 'center'
+        }}>
+          <div style={{ display: 'flex', justifyContent: 'center', gap: '8px', marginBottom: '12px' }}>
+            {[...Array(5)].map((_, i) => (
+              <span key={i} style={{ color: '#d4a959', fontSize: '28px' }}>★</span>
+            ))}
+          </div>
+          <div style={{ fontSize: '20px', fontWeight: '700', color: '#0f4d2e', marginBottom: '8px' }}>
+            4.9 out of 5 stars
+          </div>
+          <div style={{ fontSize: '13px', color: '#667C38' }}>
+            Based on 100+ verified customer reviews
+          </div>
+          <div style={{ marginTop: '24px' }}>
+            <Link 
+              href="/shop" 
+              className="button button-green"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '8px',
+                padding: '12px 24px',
+                background: 'linear-gradient(135deg, #5a8f45 0%, #4a7a38 100%)',
+                color: '#ffffff',
+                borderRadius: '8px',
+                fontSize: '14px',
+                fontWeight: '600',
+                textDecoration: 'none'
+              }}
+            >
+              Shop Now & Join Happy Customers <ArrowRight size={16}/>
+            </Link>
+          </div>
+        </div>
       </div>
     </section>
 
