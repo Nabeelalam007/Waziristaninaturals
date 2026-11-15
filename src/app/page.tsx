@@ -52,7 +52,7 @@ export default function HomePage() {
         <div className="hero-copy" style={{ paddingTop: '30px' }}>
           <span className="eyebrow eyebrow-light"><span/> ROOTED IN NATURE, INSPIRED BY WAZIRISTAN</span>
           <h1>Buy Premium Shilajit & Zaitoon Oil in Pakistan<br/><em>Natural Products</em> from Waziristan</h1>
-          <p>Discover authentic Shilajit 10g and premium Zaitoon Olive Oil in multiple sizes. Inspired by the natural heritage of Waziristan. Free delivery in Islamabad, Rs. 180 for other cities. Cash on Delivery available!</p>
+          <p>Discover authentic Shilajit 10g and premium Zaitoon Olive Oil in multiple sizes. Inspired by the natural heritage of Waziristan. Cash on Delivery available nationwide!</p>
           <div className="hero-buttons">
             <Link href="/shop" className="button button-gold" style={{
               display: 'inline-flex',
@@ -69,8 +69,8 @@ export default function HomePage() {
             display: 'flex',
             alignItems: 'center',
             gap: '16px',
-            marginTop: '25px',
-            marginBottom: '50px',
+            marginTop: '20px',
+            marginBottom: '70px',
             position: 'relative',
             zIndex: 10
           }}>
@@ -113,7 +113,7 @@ export default function HomePage() {
                 fontWeight: '500',
                 textShadow: '0 2px 4px rgba(0, 0, 0, 0.3)'
               }}>
-                Inspired by the natural beauty of Waziristan · Free Delivery in Islamabad (Rs. 180 other cities) · COD Available
+                Inspired by the natural beauty of Waziristan · COD Available Nationwide
               </span>
             </div>
           </div>
@@ -123,6 +123,40 @@ export default function HomePage() {
     </section>
 
     <section className="trust-strip"><div className="container trust-items"><span><Leaf/> Lab-Certified Quality</span><span><PackageCheck/> Cash on Delivery (COD)</span><span><HeartHandshake/> 100% Authentic Products</span></div></section>
+
+    {/* Delivery Policy Section */}
+    <section style={{
+      background: '#f8f9f4',
+      padding: '24px 0',
+      borderTop: '1px solid #e3e4d8',
+      borderBottom: '1px solid #e3e4d8'
+    }}>
+      <div className="container" style={{
+        textAlign: 'center',
+        maxWidth: '800px',
+        margin: '0 auto'
+      }}>
+        <h3 style={{
+          fontSize: '15px',
+          fontWeight: '600',
+          color: '#2a3f1f',
+          marginBottom: '12px',
+          letterSpacing: '0.5px'
+        }}>
+          🚚 DELIVERY INFORMATION
+        </h3>
+        <p style={{
+          fontSize: '14px',
+          lineHeight: '1.8',
+          color: '#4a5446',
+          margin: 0
+        }}>
+          <strong style={{ color: '#5a8f45' }}>Free Delivery in Islamabad</strong> • 
+          Rs. 180 delivery charges apply for other cities across Pakistan • 
+          Cash on Delivery (COD) available nationwide
+        </p>
+      </div>
+    </section>
 
     <section className="section collection-section" id="collection">
       <div className="container">

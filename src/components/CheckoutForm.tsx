@@ -256,7 +256,8 @@ export default function CheckoutForm() {
         <strong>{formatPKR(subtotal)}</strong>
       </div>
       <p className="summary-note">
-        ✓ Free delivery in Islamabad (Rs. 180 for other cities)<br/>
+        ✓ <strong>Islamabad:</strong> Free Delivery<br/>
+        ✓ <strong>Other Cities:</strong> Rs. 180 delivery charges<br/>
         ✓ Cash on Delivery (COD) available<br/>
         ✓ Quality guaranteed
       </p>
