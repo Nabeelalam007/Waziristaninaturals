@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     default: "Buy Shilajit Rs.2,000 & Lab-Certified Zaitoon Oil | Free Delivery 🇵🇰",
     template: "%s | Waziristani Naturals"
   },
-  description: "✓ Lab-Certified Pure Zaitoon Oil Rs.1,700-6,200 ✓ Pure Shilajit Rs.2,000 ✓ Free Delivery All Pakistan ✓ Cash on Delivery ✓ 100% Quality Guaranteed. Order on WhatsApp Now!",
+  description: "✓ Lab-Certified Pure Zaitoon Oil Rs.1,700-6,200 ✓ Pure Shilajit Rs.2,000 ✓ Free Delivery in Islamabad (Rs. 180 other cities) ✓ Cash on Delivery ✓ 100% Quality Guaranteed. Order on WhatsApp Now!",
   keywords: [
     "Shilajit Pakistan price",
     "Buy Shilajit online Pakistan",
@@ -84,6 +84,9 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <meta name="theme-color" content="#123524" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        {/* DNS Prefetch and Preconnect for faster loading */}
+        <link rel="dns-prefetch" href="https://wa.me" />
+        <link rel="preconnect" href="https://wa.me" crossOrigin="anonymous" />
       </head>
       <body>
         <CartProvider>

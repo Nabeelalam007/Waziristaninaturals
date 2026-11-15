@@ -256,7 +256,7 @@ export default function CheckoutForm() {
         <strong>{formatPKR(subtotal)}</strong>
       </div>
       <p className="summary-note">
-        ✓ Free delivery across Pakistan<br/>
+        ✓ Free delivery in Islamabad (Rs. 180 for other cities)<br/>
         ✓ Cash on Delivery (COD) available<br/>
         ✓ Quality guaranteed
       </p>

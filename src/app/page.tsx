@@ -52,7 +52,7 @@ export default function HomePage() {
         <div className="hero-copy" style={{ paddingTop: '30px' }}>
           <span className="eyebrow eyebrow-light"><span/> ROOTED IN NATURE, INSPIRED BY WAZIRISTAN</span>
           <h1>Buy Premium Shilajit & Zaitoon Oil in Pakistan<br/><em>Natural Products</em> from Waziristan</h1>
-          <p>Discover authentic Shilajit 10g and premium Zaitoon Olive Oil in multiple sizes. Inspired by the natural heritage of Waziristan. Free delivery nationwide with Cash on Delivery!</p>
+          <p>Discover authentic Shilajit 10g and premium Zaitoon Olive Oil in multiple sizes. Inspired by the natural heritage of Waziristan. Free delivery in Islamabad, Rs. 180 for other cities. Cash on Delivery available!</p>
           <div className="hero-buttons">
             <Link href="/shop" className="button button-gold" style={{
               display: 'inline-flex',
@@ -113,7 +113,7 @@ export default function HomePage() {
                 fontWeight: '500',
                 textShadow: '0 2px 4px rgba(0, 0, 0, 0.3)'
               }}>
-                Inspired by the natural beauty of Waziristan · Free Delivery · COD Available
+                Inspired by the natural beauty of Waziristan · Free Delivery in Islamabad (Rs. 180 other cities) · COD Available
               </span>
             </div>
           </div>
