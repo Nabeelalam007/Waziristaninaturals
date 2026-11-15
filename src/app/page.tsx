@@ -35,9 +35,11 @@ export default function HomePage() {
             objectFit: 'cover',
             objectPosition: 'center'
           }}
-          quality={75}
+          quality={70}
           priority
           sizes="100vw"
+          placeholder="blur"
+          blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCwABmQAAP/2Q=="
         />
       </div>
       <div className="hero-shade" style={{
@@ -62,57 +64,54 @@ export default function HomePage() {
             </Link>
           </div>
           
-          {/* Logo and DISCOVER section - same size as navbar logo */}
+          {/* Logo and DISCOVER section - no background, larger size */}
           <div style={{ 
             display: 'flex',
             alignItems: 'center',
-            gap: '12px',
+            gap: '16px',
             marginTop: '25px',
             marginBottom: '25px',
             position: 'relative',
             zIndex: 10
           }}>
-            <div style={{
-              background: '#0f4d2e',
-              padding: '4px',
-              borderRadius: '8px',
-              flexShrink: 0,
-              boxShadow: '0 3px 8px rgba(0, 0, 0, 0.15)'
-            }}>
-              <Image 
-                src="/logo.jpg"
-                alt="Waziristani Naturals"
-                width={52}
-                height={52}
-                style={{ 
-                  borderRadius: '6px',
-                  display: 'block',
-                  objectFit: 'contain'
-                }}
-                quality={95}
-                loading="eager"
-              />
-            </div>
+            <Image 
+              src="/logo.jpg"
+              alt="Waziristani Naturals"
+              width={80}
+              height={80}
+              style={{ 
+                borderRadius: '12px',
+                display: 'block',
+                objectFit: 'contain',
+                flexShrink: 0,
+                filter: 'drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3))'
+              }}
+              quality={95}
+              loading="eager"
+              priority
+            />
             <div style={{ 
               display: 'flex',
               flexDirection: 'column',
-              gap: '4px',
+              gap: '6px',
               justifyContent: 'center'
             }}>
               <span style={{ 
                 color: '#d4a959', 
-                fontSize: '10px', 
+                fontSize: '12px', 
                 fontWeight: '700',
                 letterSpacing: '0.15em',
-                textTransform: 'uppercase'
+                textTransform: 'uppercase',
+                textShadow: '0 2px 4px rgba(0, 0, 0, 0.3)'
               }}>
                 DISCOVER
               </span>
               <span style={{ 
-                color: '#d8d9cb', 
-                fontSize: '12px', 
-                lineHeight: '1.4',
-                fontWeight: '400'
+                color: '#e8e9db', 
+                fontSize: '14px', 
+                lineHeight: '1.5',
+                fontWeight: '500',
+                textShadow: '0 2px 4px rgba(0, 0, 0, 0.3)'
               }}>
                 Inspired by the natural beauty of Waziristan · Free Delivery · COD Available
               </span>

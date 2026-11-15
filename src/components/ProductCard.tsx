@@ -58,7 +58,7 @@ function ProductCard({ product }: { product: Product }) {
                 sizes="(max-width: 700px) 150px, 160px" 
                 style={{ objectFit: 'contain' }}
                 loading="lazy"
-                quality={90}
+                quality={85}
               />
             </div>
             <div style={{ 
@@ -76,7 +76,7 @@ function ProductCard({ product }: { product: Product }) {
                 sizes="(max-width: 700px) 150px, 160px" 
                 style={{ objectFit: 'contain' }}
                 loading="lazy"
-                quality={90}
+                quality={85}
               />
             </div>
           </div>
@@ -90,7 +90,7 @@ function ProductCard({ product }: { product: Product }) {
             sizes="(max-width: 700px) 100vw, (max-width: 1024px) 50vw, 400px" 
             className="product-image"
             loading="lazy"
-            quality={90}
+            quality={85}
             style={{
               objectFit: 'contain',
               padding: '20px'
