@@ -22,11 +22,11 @@ export default function Footer() {
               aria-label="Waziristani Naturals home"
               style={{
                 position: 'relative',
-                width: '56px',
-                height: '56px',
+                width: '80px',
+                height: '80px',
                 flexShrink: 0,
                 background: 'transparent',
-                borderRadius: '10px',
+                borderRadius: '12px',
                 padding: '2px',
                 display: 'block'
               }}
@@ -34,16 +34,16 @@ export default function Footer() {
               <Image
                 src="/logo.jpg"
                 alt="Waziristani Naturals Logo"
-                width={56}
-                height={56}
+                width={80}
+                height={80}
                 style={{ 
                   objectFit: 'contain',
                   width: '100%',
                   height: '100%',
-                  borderRadius: '8px',
+                  borderRadius: '10px',
                   mixBlendMode: 'multiply'
                 }}
-                quality={85}
+                quality={95}
                 loading="lazy"
               />
             </Link>
