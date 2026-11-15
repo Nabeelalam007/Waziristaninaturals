@@ -52,37 +52,50 @@ export default function HomePage() {
           <h1>Buy Premium Shilajit & Zaitoon Oil in Pakistan<br/><em>Natural Products</em> from Waziristan</h1>
           <p>Discover authentic Shilajit 10g and premium Zaitoon Olive Oil in multiple sizes. Inspired by the natural heritage of Waziristan. Free delivery nationwide with Cash on Delivery!</p>
           <div className="hero-buttons">
-            <Link href="/shop" className="button button-gold">
+            <Link href="/shop" className="button button-gold" style={{
+              display: 'inline-flex',
+              flexDirection: 'row',
+              alignItems: 'center',
+              gap: '10px'
+            }}>
               <ArrowRight size={17}/> Explore the collection
             </Link>
           </div>
           
-          {/* Logo and DISCOVER section - aligned left */}
+          {/* Logo and DISCOVER section - aligned left with full logo visibility */}
           <div style={{ 
             display: 'flex',
-            alignItems: 'flex-start',
+            alignItems: 'center',
             gap: '20px',
             marginTop: '40px'
           }}>
-            <Image 
-              src="/logo.jpg"
-              alt="Waziristani Naturals"
-              width={70}
-              height={70}
-              style={{ 
-                borderRadius: '12px', 
-                mixBlendMode: 'multiply',
-                flexShrink: 0,
-                background: '#0f4d2e',
-                padding: '6px'
-              }}
-              quality={90}
-              loading="eager"
-            />
+            <div style={{
+              background: 'rgba(249, 246, 237, 0.95)',
+              padding: '12px',
+              borderRadius: '12px',
+              border: '2px solid rgba(212, 169, 89, 0.3)',
+              flexShrink: 0,
+              boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)'
+            }}>
+              <Image 
+                src="/logo.jpg"
+                alt="Waziristani Naturals"
+                width={70}
+                height={70}
+                style={{ 
+                  borderRadius: '8px',
+                  display: 'block',
+                  objectFit: 'contain'
+                }}
+                quality={95}
+                loading="eager"
+              />
+            </div>
             <div style={{ 
               display: 'flex',
               flexDirection: 'column',
-              gap: '8px'
+              gap: '8px',
+              justifyContent: 'center'
             }}>
               <span style={{ 
                 color: '#d4a959', 
