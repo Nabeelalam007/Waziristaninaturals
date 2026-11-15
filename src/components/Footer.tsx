@@ -40,7 +40,8 @@ export default function Footer() {
                   objectFit: 'contain',
                   width: '100%',
                   height: '100%',
-                  borderRadius: '8px'
+                  borderRadius: '8px',
+                  mixBlendMode: 'multiply'
                 }}
                 priority
                 unoptimized
