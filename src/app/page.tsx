@@ -51,7 +51,11 @@ export default function HomePage() {
           <span className="eyebrow eyebrow-light"><span/> ROOTED IN NATURE, INSPIRED BY WAZIRISTAN</span>
           <h1>Buy Premium Shilajit & Zaitoon Oil in Pakistan<br/><em>Natural Products</em> from Waziristan</h1>
           <p>Discover authentic Shilajit 10g and premium Zaitoon Olive Oil in multiple sizes. Inspired by the natural heritage of Waziristan. Free delivery nationwide with Cash on Delivery!</p>
-          <div className="hero-buttons"><Link href="/shop" className="button button-gold">Explore the collection <ArrowRight size={17}/></Link><Link href="/about" className="button button-outline-light">Our story</Link></div>
+          <div className="hero-buttons">
+            <Link href="/shop" className="button button-gold">
+              <ArrowRight size={17}/> Explore the collection
+            </Link>
+          </div>
           
           {/* Logo and DISCOVER section - aligned left */}
           <div style={{ 
