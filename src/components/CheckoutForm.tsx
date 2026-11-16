@@ -256,10 +256,9 @@ export default function CheckoutForm() {
         <strong>{formatPKR(subtotal)}</strong>
       </div>
       <p className="summary-note">
-        ✓ <strong>Islamabad:</strong> Free Delivery<br/>
-        ✓ <strong>Other Cities:</strong> Rs. 180 delivery charges<br/>
         ✓ Cash on Delivery (COD) available<br/>
-        ✓ Quality guaranteed
+        ✓ Quality guaranteed<br/>
+        ✓ Nationwide delivery
       </p>
     </aside>
   </div>;

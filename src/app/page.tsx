@@ -124,40 +124,6 @@ export default function HomePage() {
 
     <section className="trust-strip"><div className="container trust-items"><span><Leaf/> Lab-Certified Quality</span><span><PackageCheck/> Cash on Delivery (COD)</span><span><HeartHandshake/> 100% Authentic Products</span></div></section>
 
-    {/* Delivery Policy Section */}
-    <section style={{
-      background: '#f8f9f4',
-      padding: '24px 0',
-      borderTop: '1px solid #e3e4d8',
-      borderBottom: '1px solid #e3e4d8'
-    }}>
-      <div className="container" style={{
-        textAlign: 'center',
-        maxWidth: '800px',
-        margin: '0 auto'
-      }}>
-        <h3 style={{
-          fontSize: '15px',
-          fontWeight: '600',
-          color: '#2a3f1f',
-          marginBottom: '12px',
-          letterSpacing: '0.5px'
-        }}>
-          🚚 DELIVERY INFORMATION
-        </h3>
-        <p style={{
-          fontSize: '14px',
-          lineHeight: '1.8',
-          color: '#4a5446',
-          margin: 0
-        }}>
-          <strong style={{ color: '#5a8f45' }}>Free Delivery in Islamabad</strong> • 
-          Rs. 180 delivery charges apply for other cities across Pakistan • 
-          Cash on Delivery (COD) available nationwide
-        </p>
-      </div>
-    </section>
-
     <section className="section collection-section" id="collection">
       <div className="container">
         <div className="section-heading"><div><div className="section-kicker">THE COLLECTION</div><h2>Simple products.<br/><em>Natural character.</em></h2></div><p>Explore our two signature offerings, selected with care and presented with a focus on quality and simplicity.</p></div>
