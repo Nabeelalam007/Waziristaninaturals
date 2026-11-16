@@ -101,28 +101,27 @@ export default function ShippingPolicyPage() {
               paddingBottom: '12px'
             }}>
               <Package size={24} style={{ display: 'inline', marginRight: '8px', verticalAlign: 'middle' }} />
-              2. Shipping Costs
+              2. Shipping & Delivery
             </h2>
             <div style={{ 
               padding: '24px', 
               background: 'linear-gradient(135deg, #f0f8f4 0%, #e8f0dc 100%)', 
               borderRadius: '8px',
               border: '2px solid #7a9b47',
-              marginTop: '16px',
-              textAlign: 'center'
+              marginTop: '16px'
             }}>
-              <p style={{ fontSize: '28px', fontWeight: '700', color: '#123524', margin: '0 0 8px 0' }}>
-                ✓ Rs. 0
+              <p style={{ fontSize: '18px', fontWeight: '600', color: '#123524', margin: '0 0 12px 0' }}>
+                📦 Reliable Nationwide Delivery
               </p>
-              <p style={{ fontSize: '16px', color: '#667C38', margin: 0 }}>
-                <strong>Completely FREE shipping</strong> on all orders, all products, all locations
+              <p style={{ fontSize: '15px', color: '#4a5542', lineHeight: '1.8', margin: 0 }}>
+                We deliver to all cities and accessible areas across Pakistan. Delivery charges and timeline will be confirmed during order placement via WhatsApp.
               </p>
             </div>
             <ul style={{ marginLeft: '24px', marginTop: '16px', marginBottom: '16px' }}>
-              <li>No minimum order value required</li>
-              <li>No hidden charges or surcharges</li>
-              <li>No extra fees for remote areas</li>
-              <li>The price you see is the price you pay</li>
+              <li>Delivery typically within 2-5 business days</li>
+              <li>You are responsible for providing an accurate delivery address</li>
+              <li>Cash on Delivery (COD) available</li>
+              <li>Order confirmation through WhatsApp</li>
             </ul>
           </div>
 
