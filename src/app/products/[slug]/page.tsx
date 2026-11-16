@@ -29,7 +29,7 @@ const zaitoonFAQs = [
   },
   {
     question: "How long does delivery take in Pakistan?",
-    answer: "Free delivery takes 2-5 business days to all cities in Pakistan. Major cities (Karachi, Lahore, Islamabad) typically receive orders within 2-3 days. Remote areas may take 4-5 days."
+    answer: "Delivery takes 2-5 business days to all cities in Pakistan. Major cities (Karachi, Lahore, Islamabad) typically receive orders within 2-3 days. Remote areas may take 4-5 days."
   },
   {
     question: "What is your return policy?",
@@ -76,7 +76,7 @@ const shilajitFAQs = [
   },
   {
     question: "How long does delivery take?",
-    answer: "Free delivery nationwide in 2-5 business days. Cash on Delivery available - inspect the product before paying to ensure you receive authentic quality."
+    answer: "Delivery nationwide in 2-5 business days. Cash on Delivery available - inspect the product before paying to ensure you receive authentic quality."
   },
   {
     question: "Can I take Shilajit with other supplements?",
@@ -250,7 +250,7 @@ export default function ProductPage() {
                       textTransform: 'uppercase',
                       letterSpacing: '0.5px'
                     }}>
-                      FREE Delivery
+                      COD Available
                     </div>
                   </div>
                   <div style={{ 
@@ -418,12 +418,12 @@ export default function ProductPage() {
               </div>
               
               <p className="detail-small" style={{ marginTop: '16px' }}>
-                <strong>🎁 Special Launch Offer:</strong> Order now and get {savingsPercent}% discount! Free delivery on all orders across Pakistan. Cash on Delivery (COD) - Check the product first, then pay. Personal order confirmation through WhatsApp.
+                <strong>🎁 Special Launch Offer:</strong> Order now and get {savingsPercent}% discount! Cash on Delivery (COD) - Check the product first, then pay. Personal order confirmation through WhatsApp.
               </p>
               
               <div className="detail-note"><Check size={17}/> Cash on Delivery (COD) available</div>
               <div className="detail-note"><Check size={17}/> Quality guaranteed - 100% authentic</div>
-              <div className="detail-note"><Check size={17}/> Free delivery across Pakistan</div>
+              <div className="detail-note"><Check size={17}/> Nationwide delivery available</div>
               
               {isZaitoonOil && (
                 <div style={{ marginTop: '24px', padding: '16px', background: '#f9f6ed', borderRadius: '8px' }}>
@@ -509,7 +509,7 @@ export default function ProductPage() {
                 <ul style={{ fontSize: '14px', lineHeight: '2', paddingLeft: '20px', margin: 0 }}>
                   <li><strong>100% Authentic:</strong> Quality-tested natural products</li>
                   <li><strong>Risk-Free COD:</strong> Check before you pay</li>
-                  <li><strong>Free Delivery:</strong> To every corner of Pakistan</li>
+                  <li><strong>Nationwide Delivery:</strong> To every corner of Pakistan</li>
                   <li><strong>Personal Service:</strong> Direct WhatsApp support</li>
                   <li><strong>Quality Guarantee:</strong> 7-day replacement policy</li>
                 </ul>

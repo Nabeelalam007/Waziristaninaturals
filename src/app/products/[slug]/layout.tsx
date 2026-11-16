@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (isZaitoonOil) {
     return {
       title: 'Buy Zaitoon Oil in Pakistan | Rs.1,700-6,200 | Lab Certified Quality 🫒',
-      description: `✓ Lab-Certified Pure Zaitoon (Olive) Oil - 250ml Rs.1,700 | 500ml Rs.3,300 | 750ml Rs.5,100 | 1L Rs.6,200 ✓ FREE Delivery Pakistan ✓ Cash on Delivery ✓ Quality Tested & Certified ✓ For Cooking, Hair & Skin. Order on WhatsApp Now!`,
+      description: `✓ Lab-Certified Pure Zaitoon (Olive) Oil - 250ml Rs.1,700 | 500ml Rs.3,300 | 750ml Rs.5,100 | 1L Rs.6,200 ✓ Cash on Delivery ✓ Quality Tested & Certified ✓ For Cooking, Hair & Skin. Order on WhatsApp Now!`,
       keywords: [
         'Zaitoon oil Pakistan price',
         'Lab certified olive oil Pakistan',
@@ -40,7 +40,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       },
       openGraph: {
         title: 'Lab-Certified Zaitoon Oil Rs.1,700-6,200 | Buy Online Pakistan 🫒',
-        description: `✓ Quality Tested Pure Olive Oil ✓ All Sizes ✓ FREE Delivery ✓ COD Available`,
+        description: `✓ Quality Tested Pure Olive Oil ✓ All Sizes ✓ COD Available`,
         url: `https://waziristaninaturals.store/products/${product.slug}`,
         images: [{
           url: `https://waziristaninaturals.store${product.image}`,
@@ -55,7 +55,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (isShilajit) {
     return {
       title: 'Buy Pure Shilajit 10g in Pakistan | Rs.2,000 | Authentic Mountain Resin 🏔️',
-      description: `✓ 100% Pure Himalayan Shilajit 10g Rs.2,000 ✓ Authentic Mountain-Origin ✓ FREE Delivery All Pakistan ✓ Cash on Delivery (COD) ✓ Boosts Energy & Stamina ✓ Quality Guaranteed. Order on WhatsApp +92-336-8885780 Now!`,
+      description: `✓ 100% Pure Himalayan Shilajit 10g Rs.2,000 ✓ Authentic Mountain-Origin ✓ Cash on Delivery (COD) ✓ Boosts Energy & Stamina ✓ Quality Guaranteed. Order on WhatsApp +92-336-8885780 Now!`,
       keywords: [
         'Shilajit Pakistan price Rs 2000',
         'Buy Shilajit online Pakistan',
@@ -74,7 +74,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       },
       openGraph: {
         title: 'Pure Shilajit 10g Rs.2,000 | Buy in Pakistan 🏔️',
-        description: `✓ 100% Pure & Authentic ✓ FREE Delivery ✓ COD Available ✓ Energy & Vitality`,
+        description: `✓ 100% Pure & Authentic ✓ COD Available ✓ Energy & Vitality`,
         url: `https://waziristaninaturals.store/products/${product.slug}`,
         images: [{
           url: `https://waziristaninaturals.store${product.image}`,

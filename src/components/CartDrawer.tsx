@@ -98,7 +98,7 @@ export default function CartDrawer({ isOpen, onClose }: CartDrawerProps) {
                 <span>Subtotal:</span>
                 <strong>{formatPKR(subtotal)}</strong>
               </div>
-              <p className="cart-drawer-note">✓ Free Delivery · COD Available</p>
+              <p className="cart-drawer-note">✓ COD Available Nationwide</p>
               <Link 
                 href="/checkout" 
                 onClick={onClose}

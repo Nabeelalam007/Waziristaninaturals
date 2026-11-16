@@ -10,14 +10,14 @@ const HERO_IMAGE = "/hero-mountains.jpg"; // We'll create optimized local versio
 const STORY_IMAGE = "/story-valley.jpg";
 
 export const metadata: Metadata = {
-  title: "Buy Pure Shilajit & Lab-Certified Zaitoon Oil | Rs.1,700-2,000 | Free Delivery 🇵🇰",
-  description: "⭐ Lab-Certified Pure Zaitoon Oil Rs.1,700-6,200 ⭐ Pure Shilajit 10g Rs.2,000 ⭐ FREE Delivery All Pakistan ⭐ Cash on Delivery (COD) ⭐ 100% Quality Guaranteed ⭐ Order on WhatsApp +92-336-8885780",
+  title: "Buy Pure Shilajit & Lab-Certified Zaitoon Oil | Rs.1,700-2,000 🇵🇰",
+  description: "⭐ Lab-Certified Pure Zaitoon Oil Rs.1,700-6,200 ⭐ Pure Shilajit 10g Rs.2,000 ⭐ Cash on Delivery (COD) ⭐ 100% Quality Guaranteed ⭐ Order on WhatsApp +92-336-8885780",
   alternates: {
     canonical: "https://waziristaninaturals.store",
   },
   openGraph: {
-    title: "Buy Pure Shilajit Rs.2,000 & Lab-Certified Zaitoon Oil | Free Delivery Pakistan 🇵🇰",
-    description: "✓ Lab-Certified Zaitoon Oil ✓ Pure Mountain Shilajit ✓ Free Delivery ✓ COD Available ✓ 100% Quality Guaranteed",
+    title: "Buy Pure Shilajit Rs.2,000 & Lab-Certified Zaitoon Oil Pakistan 🇵🇰",
+    description: "✓ Lab-Certified Zaitoon Oil ✓ Pure Mountain Shilajit ✓ COD Available ✓ 100% Quality Guaranteed",
     url: "https://waziristaninaturals.store",
   },
 };

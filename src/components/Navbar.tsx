@@ -25,7 +25,7 @@ export default function Navbar() {
   
   return (
     <header className="site-header">
-      <div className="announcement">✨ Launch Offer + Free Delivery + Cash on Delivery (COD) Available ✨</div>
+      <div className="announcement">✨ Launch Offer + Cash on Delivery (COD) Available ✨</div>
       <nav className="navbar container">
         <Logo />
         <div className="desktop-nav">

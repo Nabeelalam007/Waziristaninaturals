@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 
 export const SITE_CONFIG = {
   name: 'Waziristani Naturals',
-  description: '✓ Pure Shilajit Rs.1,999 ✓ Premium Zaitoon Oil from Rs.1,699 ✓ Free Delivery All Pakistan ✓ Cash on Delivery ✓ 100% Quality Guaranteed. Order on WhatsApp Now!',
+  description: '✓ Pure Shilajit Rs.1,999 ✓ Premium Zaitoon Oil from Rs.1,699 ✓ Cash on Delivery ✓ 100% Quality Guaranteed. Order on WhatsApp Now!',
   url: 'https://waziristaninaturals.com',
   ogImage: '/og-image.png',
   keywords: [
@@ -25,7 +25,7 @@ export const SITE_CONFIG = {
     // Transactional keywords
     'Natural products Pakistan COD',
     'Buy natural products online Pakistan',
-    'Free delivery natural products Pakistan',
+    'Natural products Pakistan COD',
     'Shilajit COD Pakistan',
     'Olive oil COD Pakistan',
     // Long-tail & informational

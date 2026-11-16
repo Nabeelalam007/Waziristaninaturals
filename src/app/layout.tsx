@@ -10,10 +10,10 @@ import { OrganizationSchema, WebsiteSchema, LocalBusinessSchema } from "@/compon
 export const metadata: Metadata = {
   metadataBase: new URL("https://waziristaninaturals.store"),
   title: {
-    default: "Buy Shilajit Rs.2,000 & Lab-Certified Zaitoon Oil | Free Delivery 🇵🇰",
+    default: "Buy Shilajit Rs.2,000 & Lab-Certified Zaitoon Oil 🇵🇰",
     template: "%s | Waziristani Naturals"
   },
-  description: "✓ Lab-Certified Pure Zaitoon Oil Rs.1,700-6,200 ✓ Pure Shilajit Rs.2,000 ✓ Free Delivery in Islamabad (Rs. 180 other cities) ✓ Cash on Delivery ✓ 100% Quality Guaranteed. Order on WhatsApp Now!",
+  description: "✓ Lab-Certified Pure Zaitoon Oil Rs.1,700-6,200 ✓ Pure Shilajit Rs.2,000 ✓ Cash on Delivery ✓ 100% Quality Guaranteed. Order on WhatsApp Now!",
   keywords: [
     "Shilajit Pakistan price",
     "Buy Shilajit online Pakistan",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     "Buy olive oil online Pakistan",
     "Extra virgin olive oil Pakistan",
     "Olive oil for hair Pakistan",
-    "Natural products Pakistan free delivery",
+    "Natural products Pakistan COD",
     "Waziristani Naturals",
     "COD olive oil Pakistan",
     "Best Shilajit in Pakistan"
@@ -42,8 +42,8 @@ export const metadata: Metadata = {
     locale: "en_PK",
     url: "https://waziristaninaturals.store",
     siteName: "Waziristani Naturals",
-    title: "Buy Shilajit & Lab-Certified Zaitoon Oil | Free Delivery Pakistan 🇵🇰",
-    description: "✓ Lab-Certified Zaitoon Oil Rs.1,700 ✓ Pure Shilajit Rs.2,000 ✓ FREE Delivery ✓ COD Available",
+    title: "Buy Shilajit & Lab-Certified Zaitoon Oil Pakistan 🇵🇰",
+    description: "✓ Lab-Certified Zaitoon Oil Rs.1,700 ✓ Pure Shilajit Rs.2,000 ✓ COD Available",
     images: [
       {
         url: "/Logo ori.jpg",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Buy Shilajit & Lab-Certified Zaitoon Oil | Free Delivery Pakistan 🇵🇰",
+    title: "Buy Shilajit & Lab-Certified Zaitoon Oil Pakistan 🇵🇰",
     description: "✓ Lab-Certified Zaitoon Oil Rs.1,700 ✓ Pure Shilajit Rs.2,000 ✓ COD Available",
     images: ["/Logo ori.jpg"],
   },

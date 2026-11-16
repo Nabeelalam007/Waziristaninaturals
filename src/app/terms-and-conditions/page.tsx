@@ -259,7 +259,6 @@ export default function TermsAndConditionsPage() {
               <strong>Key points:</strong>
             </p>
             <ul style={{ marginLeft: '24px', marginTop: '12px', marginBottom: '16px' }}>
-              <li>Free delivery across Pakistan</li>
               <li>Delivery typically within 2-5 business days</li>
               <li>You are responsible for providing an accurate delivery address</li>
               <li>Risk of loss passes to you upon delivery</li>

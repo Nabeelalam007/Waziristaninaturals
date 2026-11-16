@@ -7,7 +7,7 @@ const EMAIL = "waziristaninaturals@gmail.com";
 
 export const metadata: Metadata = {
   title: "Contact Us - Order Shilajit & Zaitoon Oil | WhatsApp +92-336-8885780 📱",
-  description: "Contact Waziristani Naturals for orders & inquiries. WhatsApp: +92-336-8885780 | Email: waziristaninaturals@gmail.com. Order Shilajit Rs.1,999 & Zaitoon Oil with FREE delivery & COD across Pakistan. Fast response guaranteed!",
+  description: "Contact Waziristani Naturals for orders & inquiries. WhatsApp: +92-336-8885780 | Email: waziristaninaturals@gmail.com. Order Shilajit Rs.1,999 & Zaitoon Oil with COD across Pakistan. Fast response guaranteed!",
   keywords: [
     "Contact Waziristani Naturals",
     "Order Shilajit Pakistan WhatsApp",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Contact Waziristani Naturals | Order on WhatsApp 📱",
-    description: "Get in touch for orders & product information. WhatsApp: +92-336-8885780. FREE delivery & COD available.",
+    description: "Get in touch for orders & product information. WhatsApp: +92-336-8885780. COD available.",
     url: "https://waziristaninaturals.store/contact",
   },
 };

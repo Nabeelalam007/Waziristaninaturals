@@ -3,8 +3,8 @@ import Link from "next/link";
 import { Truck, Package, MapPin, Clock, Mail } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Shipping & Delivery Policy | Free Delivery Pakistan | Waziristani Naturals",
-  description: "Free delivery across Pakistan! Learn about our shipping process, delivery times, and how we ensure your Shilajit and Zaitoon Oil reach you safely.",
+  title: "Shipping & Delivery Policy Pakistan | Waziristani Naturals",
+  description: "Delivery across Pakistan! Learn about our shipping process, delivery times, and how we ensure your Shilajit and Zaitoon Oil reach you safely.",
   alternates: {
     canonical: "https://waziristaninaturals.store/shipping-policy",
   },
@@ -37,11 +37,11 @@ export default function ShippingPolicyPage() {
             <Truck size={32} style={{ color: '#667C38', flexShrink: 0, marginTop: '4px' }} />
             <div>
               <h3 style={{ fontSize: '20px', marginBottom: '8px', color: '#123524' }}>
-                🎉 Free Delivery Nationwide!
+                🚚 Delivery Nationwide!
               </h3>
               <p style={{ fontSize: '15px', lineHeight: '1.8', margin: 0, color: '#4a5542' }}>
-                We offer <strong>FREE delivery to all cities and regions across Pakistan</strong>. 
-                No minimum order required. Your natural wellness products delivered right to your doorstep.
+                We offer <strong>delivery to all cities and regions across Pakistan</strong>. 
+                Your natural wellness products delivered right to your doorstep.
               </p>
             </div>
           </div>

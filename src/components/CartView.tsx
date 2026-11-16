@@ -18,6 +18,6 @@ export default function CartView() {
         <div className="cart-row-end"><strong>{formatPKR(item.price * item.quantity)}</strong><button className="remove-button" onClick={() => removeItem(item.key)} aria-label="Remove item"><Trash2 size={17}/></button></div>
       </div>;
     })}</div>
-    <aside className="summary-card"><h2>Order summary</h2><div className="summary-line"><span>Subtotal</span><strong>{formatPKR(subtotal)}</strong></div><div className="summary-line"><span>Delivery</span><strong style={{ color: '#667c38' }}>FREE</strong></div><div className="summary-total"><span>Estimated total</span><strong>{formatPKR(subtotal)}</strong></div><p className="summary-note">✓ Free delivery on all orders<br/>✓ Cash on Delivery (COD)<br/>✓ All products quality guaranteed</p><Link href="/checkout" className="button button-green button-full">Continue to checkout <ArrowRight size={17}/></Link><Link href="/shop" className="continue-link">Continue shopping</Link></aside>
+    <aside className="summary-card"><h2>Order summary</h2><div className="summary-line"><span>Subtotal</span><strong>{formatPKR(subtotal)}</strong></div><div className="summary-total"><span>Total</span><strong>{formatPKR(subtotal)}</strong></div><p className="summary-note">✓ Cash on Delivery (COD)<br/>✓ All products quality guaranteed<br/>✓ Nationwide delivery</p><Link href="/checkout" className="button button-green button-full">Continue to checkout <ArrowRight size={17}/></Link><Link href="/shop" className="continue-link">Continue shopping</Link></aside>
   </div>;
 }

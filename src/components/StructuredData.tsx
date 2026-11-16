@@ -9,7 +9,7 @@ export function OrganizationSchema() {
     alternateName: 'Waziristan Naturals',
     url: 'https://waziristaninaturals.store',
     logo: 'https://waziristaninaturals.store/Logo ori.jpg',
-    description: 'Premium natural products including Shilajit and Zaitoon Olive Oil from Pakistan with free delivery nationwide',
+    description: 'Premium natural products including Shilajit and Zaitoon Olive Oil from Pakistan with COD nationwide',
     address: {
       '@type': 'PostalAddress',
       addressCountry: 'PK',
