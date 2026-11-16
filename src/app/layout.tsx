@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ClientCartDrawer from "@/components/ClientCartDrawer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import { CartProvider } from "@/context/CartContext";
 import { OrganizationSchema, WebsiteSchema, LocalBusinessSchema } from "@/components/StructuredData";
 
@@ -94,6 +95,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           <main>{children}</main>
           <Footer/>
           <ClientCartDrawer/>
+          <WhatsAppButton/>
         </CartProvider>
         <OrganizationSchema />
         <WebsiteSchema />
